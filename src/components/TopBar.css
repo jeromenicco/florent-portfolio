@@ -1,0 +1,36 @@
+.top__bar__container {
+  position: relative;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #fefe00;
+  position: fixed;
+  top: 0;
+  min-width: -webkit-fill-available;
+  z-index: 1;
+}
+
+.emoji__rail {
+  display: flex;
+  margin-top: 0;
+  height: 50px;
+  width: 50px;
+  padding-right: 50px;
+  padding-left: 20px;
+  overflow: hidden;
+}
+.emoji__rotate {
+  font-size: 55px;
+  text-shadow: 0 0 15px#fe7b7b;
+  animation: 4s infinite linear rotation;
+}
+
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(359deg);
+  }
+}

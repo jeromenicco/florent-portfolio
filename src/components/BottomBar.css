@@ -1,0 +1,24 @@
+/* .bottom__bar__wrapper {
+  position: fixed;
+} */
+
+.bottom__bar__container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 50px;
+  padding-right: 10px;
+  padding-left: 10px;
+  background: #fe7b7b;
+  color: #3f002f;
+  position: fixed;
+  bottom: 0;
+  min-width: -webkit-fill-available;
+  z-index: 1;
+}
+
+.bottom__bar__container p {
+  cursor: pointer;
+  font-size: 20px;
+  font-weight: 800;
+}

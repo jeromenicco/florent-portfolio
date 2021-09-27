@@ -1,0 +1,11 @@
+.home__container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.dum__space__home {
+  height: 70px;
+}

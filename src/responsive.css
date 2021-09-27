@@ -1,0 +1,23 @@
+@media only screen and (min-width: 800px) {
+  .home__container {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+    padding-top: 70px;
+    padding-bottom: 70px;
+  }
+
+  .card__container {
+    width: 510px;
+  }
+
+  .bottom__bar__container {
+    padding-right: 20px;
+    padding-left: 20px;
+  }
+
+  .bottom__bar__container p {
+    font-size: 30px;
+  }
+}

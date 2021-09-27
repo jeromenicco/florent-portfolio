@@ -1,0 +1,13 @@
+.ticker__container {
+  width: 100%;
+  position: absolute;
+  z-index: -1;
+}
+
+.ticker__text {
+  color: #3f002e;
+  font-size: 30px;
+  font-weight: 800;
+  width: max-content;
+  padding-right: 5px;
+}
