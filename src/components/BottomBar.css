@@ -1,24 +1,31 @@
-/* .bottom__bar__wrapper {
-  position: fixed;
-} */
+@font-face {
+  font-family: "Righteous-Regular";
+  src: local("Righteous-Regular"),
+    url("../assets/fonts/Righteous-Regular.ttf") format("woff");
+}
 
 .bottom__bar__container {
+  font-family: "Righteous-Regular";
   display: flex;
   align-items: center;
-  justify-content: space-between;
   height: 50px;
-  padding-right: 10px;
-  padding-left: 10px;
   background: #fe7b7b;
   color: #3f002f;
   position: fixed;
   bottom: 0;
-  min-width: -webkit-fill-available;
+  width: 100%;
   z-index: 1;
+}
+
+.bottom__flex__wrap {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin-right: 10px;
+  margin-left: 10px;
 }
 
 .bottom__bar__container p {
   cursor: pointer;
-  font-size: 20px;
-  font-weight: 800;
+  font-size: 23px;
 }

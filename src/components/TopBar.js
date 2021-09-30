@@ -4,6 +4,11 @@ import { useSpring, animated } from "react-spring"
 
 import TickerText from "./TickerText"
 
+import heartEMOJI from "../assets/gifs/EMOJI_COEUR.gif"
+import faceEMOJI from "../assets/gifs/EMOJI_FACE.gif"
+import unicornEMOJI from "../assets/gifs/EMOJI_LICORNE.gif"
+import bearEMOJI from "../assets/gifs/EMOJI_OURS.gif"
+
 import "./TopBar.css"
 
 function TopBar() {
@@ -19,7 +24,8 @@ function TopBar() {
     },
     config: {
       duration: screenWidth * 5.5,
-      delay: 10000,
+
+      delay: 500,
     },
   })
 
@@ -33,6 +39,8 @@ function TopBar() {
     },
     config: {
       duration: screenWidth * 6,
+      duration: 8000,
+      delay: 5000,
     },
   })
 
@@ -71,7 +79,7 @@ function TopBar() {
         }}
         className="emoji__rail"
       >
-        <span className="emoji__rotate">🦄</span>
+        <img src={unicornEMOJI} alt="unicorn-emoji" />
       </animated.div>
 
       <animated.div
@@ -80,7 +88,7 @@ function TopBar() {
         }}
         className="emoji__rail"
       >
-        <span className="emoji__rotate">🖤</span>
+        <img src={heartEMOJI} alt="heart-emoji" />
       </animated.div>
 
       <animated.div
@@ -89,7 +97,7 @@ function TopBar() {
         }}
         className="emoji__rail"
       >
-        <span className="emoji__rotate">🥴</span>
+        <img src={faceEMOJI} alt="face-emoji" />
       </animated.div>
 
       <animated.div
@@ -98,9 +106,10 @@ function TopBar() {
         }}
         className="emoji__rail"
       >
-        <span className="emoji__rotate">🧸</span>
+        <img src={bearEMOJI} alt="bear-emoji" />
       </animated.div>
-      <TickerText />
+
+      <TickerText screenWidth={screenWidth} />
     </div>
   )
 }

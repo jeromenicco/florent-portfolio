@@ -1,0 +1,14 @@
+.infos__container {
+  width: 100%;
+  line-height: 30px;
+  margin-left: 20px;
+  font-family: "InknutAntiqua-Light";
+  text-align: left;
+  color: #fe7b7b;
+  margin-top: 0;
+  /* font-size: 25px; */
+}
+
+.infos__content1 {
+  width: 300px;
+}

@@ -7,30 +7,38 @@
   background: #fefe00;
   position: fixed;
   top: 0;
-  min-width: -webkit-fill-available;
+  width: 100%;
   z-index: 1;
 }
 
 .emoji__rail {
   display: flex;
-  margin-top: 0;
-  height: 50px;
+  position: absolute;
+  top: -20px;
+  margin-top: 0px;
+  height: 70px;
   width: 50px;
   padding-right: 50px;
-  padding-left: 20px;
+  padding-left: 0px;
   overflow: hidden;
 }
-.emoji__rotate {
+
+.emoji__rail img {
+  width: 100px;
+  height: 100px;
+}
+
+/* .emoji__rotate {
   font-size: 55px;
   text-shadow: 0 0 15px#fe7b7b;
   animation: 4s infinite linear rotation;
-}
+} */
 
-@keyframes rotation {
+/* @keyframes rotation {
   from {
     transform: rotate(0deg);
   }
   to {
     transform: rotate(359deg);
   }
-}
+} */

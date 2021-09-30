@@ -1,42 +1,24 @@
-import React from "react"
+import React, { useState } from "react"
 
-// Import Swiper React components
-import { Swiper, SwiperSlide } from "swiper/react"
-// Import Swiper styles
-// import "swiper/css"
-// import "swiper/css/pagination"
-// import "swiper/css/navigation"
-// import Swiper core and required modules
-import SwiperCore, { Pagination, Navigation } from "swiper"
+import FadeIn from "react-fade-in"
+
+import ProjectSwiper from "./ProjectSwiper"
 
 import "./ProjectCard.css"
 
-function ProjectCard() {
-  // install Swiper modules
-  SwiperCore.use([Pagination, Navigation])
+function ProjectCard({ item }) {
+  const [fullDisplay, setFullDisplay] = useState(false)
+
   return (
-    // <div className="card__container">
-    //   <div className="fake__img" />
-    //   <div className="card__text__container">
-    //     <p>Usbek & Rica magazine</p>
-    //     <p>--Direction artistique</p>
-    //   </div>
-    // </div>
-    <Swiper
-      slidesPerView={1}
-      spaceBetween={30}
-      loop={true}
-      pagination={{
-        clickable: true,
-      }}
-      navigation={true}
-      className="mySwiper"
-    >
-      <SwiperSlide>Slide 1</SwiperSlide>
-      <SwiperSlide>Slide 2</SwiperSlide>
-      <SwiperSlide>Slide 3</SwiperSlide>
-      <SwiperSlide>Slide 4</SwiperSlide>
-    </Swiper>
+    <FadeIn className="card__container">
+      <ProjectSwiper item={item} />
+      <div className="card__text__container">
+        <p className="card__title" onClick={() => setFullDisplay(!fullDisplay)}>
+          {item.title}
+        </p>
+        <p>{item.resume}</p>
+      </div>
+    </FadeIn>
   )
 }
 

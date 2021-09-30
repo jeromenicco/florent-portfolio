@@ -1,3 +1,9 @@
+@font-face {
+  font-family: "Righteous-Regular";
+  src: local("Righteous-Regular"),
+    url("../assets/fonts/Righteous-Regular.ttf") format("woff");
+}
+
 .ticker__container {
   width: 100%;
   position: absolute;
@@ -5,9 +11,9 @@
 }
 
 .ticker__text {
+  font-family: "Righteous-Regular";
   color: #3f002e;
   font-size: 30px;
-  font-weight: 800;
   width: max-content;
   padding-right: 5px;
 }
