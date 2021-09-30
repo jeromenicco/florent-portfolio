@@ -1,5 +1,6 @@
 .infos__container {
   width: 100%;
+  height: 100%;
   line-height: 30px;
   margin-left: 20px;
   font-family: "InknutAntiqua-Light";
@@ -11,4 +12,8 @@
 
 .infos__content1 {
   width: 300px;
+}
+
+.dum__space__contact {
+  height: 100%;
 }

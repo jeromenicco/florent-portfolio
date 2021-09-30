@@ -15,7 +15,12 @@ function ContactInfos() {
       <p className="infos__content2">
         Contactez-moi à l'adresse florent.texier@protonmail.com !
       </p>
-      <p className="infos__content3">Références :</p>
+      <p className="infos__content3">
+        Références : xxxxx xxxxx xxxxx xxxxx xxxxx xxxxx xxxxx xxxxx xxxxx xxxxx
+        xxxxx xxxxx xxxxx xxxxx xxxxx xxxxx xxxxx xxxxx xxxxx xxxxx xxxxx xxxxx
+        xxxxx xxxxx xxxxx xxxxx xxxxx xxxxx xxxxx xxxxx xxxxx xxxxx xxxxx xxxxx
+        xxxxx xxxxx xxxxx xxxxx xxxxx xxxxx xxxxx xxxxx xxxxx xxxxx xxxxx xxxxx
+      </p>
     </FadeIn>
   )
 }
