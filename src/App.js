@@ -7,6 +7,8 @@ import Contact from "./pages/Contact"
 import BottomBar from "./components/BottomBar"
 import TopBar from "./components/TopBar"
 
+import ScrollToTop from "./effects/ScrollToTop"
+
 import "./App.css"
 import "./responsive.css"
 
@@ -16,10 +18,12 @@ function App() {
     <div className="app">
       <TopBar history={history} />
       <BottomBar history={history} />
-      <Switch>
-        <Route exact path="/" component={Home} />
-        <Route exact path="/contact" component={Contact} />
-      </Switch>
+      <ScrollToTop>
+        <Switch>
+          <Route exact path="/" component={Home} />
+          <Route exact path="/contact" component={Contact} />
+        </Switch>
+      </ScrollToTop>
     </div>
   )
 }
