@@ -39,7 +39,7 @@ function TopBar() {
     },
     config: {
       duration: screenWidth * 6,
-      duration: 8000,
+      // duration: 8000,
       delay: 5000,
     },
   })
@@ -47,13 +47,13 @@ function TopBar() {
   const emojiSpring3 = useSpring({
     loop: true,
     from: {
-      transform: `translate(-${screenWidth * 1.8}px)`,
+      transform: `translate(-${screenWidth + screenWidth}px)`,
     },
     to: {
       transform: `translate(${screenWidth}px)`,
     },
     config: {
-      duration: screenWidth * 5.3,
+      duration: screenWidth * 9.3,
       delay: 2000,
     },
   })
