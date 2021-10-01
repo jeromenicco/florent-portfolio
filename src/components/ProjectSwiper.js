@@ -30,6 +30,10 @@ function ProjectSwiper({ item }) {
           <img className="project__img" src={image} alt={item.title} />
         </SwiperSlide>
       ))}
+      <div className="card__text__container">
+        <p className="card__title">{item.title}</p>
+        <p>{item.resume}</p>
+      </div>
     </Swiper>
   )
 }

@@ -13,12 +13,22 @@
   z-index: 0;
 }
 
-.card__text__container {
+/* .card__text__container {
   font-family: "InknutAntiqua-Light";
   text-align: center;
   width: 100%;
   color: #fe7b7b;
   line-height: 20px;
+} */
+
+.card__text__container {
+  font-family: "InknutAntiqua-Light";
+  text-align: left;
+  width: 100%;
+  color: #fe7b7b;
+  line-height: 20px;
+  margin-top: -38px;
+  order: 1;
 }
 
 .card__text__container p {

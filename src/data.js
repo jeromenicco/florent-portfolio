@@ -1,10 +1,9 @@
 import UR1 from "./assets/images/U&R/U&R.jpg"
 import UR2 from "./assets/images/U&R/U&R2.jpg"
-import UR3 from "./assets/images/U&R/U&R3.jpg"
-import UR4 from "./assets/images/U&R/U&R4.jpg"
-import UR5 from "./assets/images/U&R/U&R5.jpg"
-import UR6 from "./assets/images/U&R/U&R6.jpg"
-import UR7 from "./assets/images/U&R/U&R7.jpg"
+import UR3 from "./assets/images/U&R/U&R4.jpg"
+import UR4 from "./assets/images/U&R/U&R5.jpg"
+import UR5 from "./assets/images/U&R/U&R6.jpg"
+import UR6 from "./assets/images/U&R/U&R7.jpg"
 
 import DD1 from "./assets/images/DATADRAMA/DATADRAMA.jpg"
 import DD2 from "./assets/images/DATADRAMA/DATADRAMA2.jpg"
@@ -22,7 +21,7 @@ export const projectList = [
   {
     title: "Usbek & Rica magazine",
     resume: "Direction artistique et mise en page des numéros trimestriels",
-    img: [UR1, UR2, UR3, UR3, UR4, UR5, UR6, UR7],
+    img: [UR1, UR2, UR3, UR3, UR4, UR5, UR6],
   },
   {
     title: "DATADRAMA",

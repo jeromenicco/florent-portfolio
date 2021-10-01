@@ -2,7 +2,7 @@
   width: 100%;
   position: initial;
   display: flex;
-  flex-direction: column-reverse;
+  flex-direction: column;
 }
 
 .project__img {
@@ -55,7 +55,15 @@
   position: initial;
   margin-top: 20px;
   margin-bottom: 20px;
+  text-align: end;
+  order: 1;
 }
+
+/* .swiper-container-horizontal > .swiper-pagination-bullets {
+  position: absolute;
+  bottom: 140px;
+  text-align: right;
+} */
 
 .swiper-pagination-bullet {
   border-radius: 0;
