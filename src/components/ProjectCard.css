@@ -28,6 +28,13 @@
 .card__title {
   padding-bottom: 10px;
   font-weight: bold;
+  cursor: pointer;
+}
+
+.card__title:hover {
+  color: #fefe00;
+  text-shadow: 0 0 5px #fff, 0 0 20px rgba(254, 254, 0, 0.7),
+    0 0 10px rgba(254, 254, 0, 0.7);
 }
 
 /* SWIPER -------- */

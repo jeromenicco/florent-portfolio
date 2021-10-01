@@ -87,6 +87,10 @@
     font-size: 30px;
   }
 
+  .top__bar__container p {
+    font-size: 30px;
+  }
+
   .dum__space__home {
     display: none;
   }

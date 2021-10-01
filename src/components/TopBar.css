@@ -11,6 +11,11 @@
   z-index: 2;
 }
 
+.top__bar__container p {
+  color: #fe7b7b;
+  font-size: 23px;
+}
+
 .emoji__rail {
   display: flex;
   position: absolute;

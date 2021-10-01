@@ -1,4 +1,4 @@
-import React, { useState } from "react"
+import React from "react"
 
 import FadeIn from "react-fade-in"
 
@@ -6,9 +6,7 @@ import ProjectSwiper from "./ProjectSwiper"
 
 import "./ProjectCard.css"
 
-function ProjectCard({ item }) {
-  const [fullDisplay, setFullDisplay] = useState(false)
-
+function ProjectCard({ item, fullDisplay, setFullDisplay }) {
   return (
     <FadeIn className="card__container">
       <ProjectSwiper item={item} />
