@@ -6,7 +6,7 @@
 
 .card__container {
   position: relative;
-  min-height: 400px;
+  min-height: 370px;
   margin-right: 5%;
   margin-left: 5%;
   margin-bottom: 20px;
@@ -27,7 +27,7 @@
   width: 100%;
   color: #fe7b7b;
   line-height: 20px;
-  margin-top: -38px;
+  margin-top: -39px;
   order: 1;
 }
 
