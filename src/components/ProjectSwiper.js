@@ -17,24 +17,26 @@ function ProjectSwiper({ item }) {
   SwiperCore.use([Pagination, Navigation])
 
   return (
-    <Swiper
-      className="swiper__container"
-      slidesPerView={1}
-      spaceBetween={10}
-      loop={true}
-      pagination
-      navigation={true}
-    >
-      {item.img.map((image, index) => (
-        <SwiperSlide key={index}>
-          <img className="project__img" src={image} alt={item.title} />
-        </SwiperSlide>
-      ))}
+    <div>
+      <Swiper
+        className="swiper__container"
+        slidesPerView={1}
+        spaceBetween={10}
+        loop={true}
+        pagination
+        navigation={true}
+      >
+        {item.img.map((image, index) => (
+          <SwiperSlide key={index}>
+            <img className="project__img" src={image} alt={item.title} />
+          </SwiperSlide>
+        ))}
+      </Swiper>
       <div className="card__text__container">
         <p className="card__title">{item.title}</p>
         <p>{item.resume}</p>
       </div>
-    </Swiper>
+    </div>
   )
 }
 

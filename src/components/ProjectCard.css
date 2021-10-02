@@ -6,7 +6,7 @@
 
 .card__container {
   position: relative;
-  min-height: 370px;
+  height: 370px;
   margin-right: 5%;
   margin-left: 5%;
   margin-bottom: 20px;
@@ -41,10 +41,10 @@
   cursor: pointer;
 }
 
-.card__title:hover {
+/* .card__title:hover {
   color: #fefe00;
   text-shadow: 0 0 5px #fff, 0 0 20px rgba(254, 254, 0, 0.7),
     0 0 10px rgba(254, 254, 0, 0.7);
-}
+} */
 
 /* SWIPER -------- */

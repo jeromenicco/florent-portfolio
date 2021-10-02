@@ -10,11 +10,12 @@
     margin-right: 10%; */
   }
   .card__container {
-    width: 40%;
+    width: 48%;
     /* height: 550px; */
     height: 750px;
     margin: 0;
     font-size: 20px;
+    /* line-height: 25px; */
     /* padding-bottom: 50px; */
   }
   /* .card__container__full {
@@ -22,6 +23,24 @@
     height: 800px;
     margin: 0;
   } */
+
+  .card__text__container {
+    line-height: 25px;
+    width: 75%;
+  }
+  /* .card__text__container:hover {
+    cursor: pointer;
+    color: #fefe00;
+    text-shadow: 0 0 5px #fff, 0 0 20px rgba(254, 254, 0, 0.7),
+      0 0 10px rgba(254, 254, 0, 0.7);
+  } */
+
+  .swiper-container {
+    width: 100%;
+    position: initial;
+    display: flex;
+    flex-direction: column;
+  }
 
   .swiper-button-prev {
     display: initial;
