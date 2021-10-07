@@ -18,6 +18,18 @@ import FIF3 from "./assets/images/FIF/FIF853.jpg"
 import FIF4 from "./assets/images/FIF/FIF854.jpg"
 import FIF5 from "./assets/images/FIF/FIF855.jpg"
 
+import LAC1 from "./assets/images/LAC/LAC1.jpg"
+import LAC2 from "./assets/images/LAC/LAC2.jpg"
+import LAC3 from "./assets/images/LAC/LAC3.jpg"
+import LAC4 from "./assets/images/LAC/LAC4.jpg"
+
+import TFC1 from "./assets/images/TFC/TFC1_GENERIQUE.mp4"
+import TFC2 from "./assets/images/TFC/TFC2.jpg"
+import TFC3 from "./assets/images/TFC/TFC3_BIRTH.mp4"
+import TFC4 from "./assets/images/TFC/TFC4.jpg"
+import TFC5 from "./assets/images/TFC/TFC5_ROCKET.mp4"
+import TFC6 from "./assets/images/TFC/TFC6.jpg"
+
 export const projectList = [
   {
     title: "Usbek & Rica magazine",
@@ -34,5 +46,16 @@ export const projectList = [
     title: "F.I.F.85",
     resume: "Identité visuelle, typographie",
     img: [FIF1, FIF2, FIF3, FIF4, FIF5],
+  },
+  {
+    title: "L’autre Canal — Nancy",
+    resume: "Programmes trimestriels des concerts de musiques actuelles.Identité visuelle, mise en page, illustration.",
+    img: [LAC1, LAC2, LAC3, LAC4],
+  },
+  {
+    title: "The Final Countdown",
+    resume: "Talk-show en ligne d’ArianeGroup qui parle de l’espace. Identité visuelle, habillage graphique, motion design. Voir l’émission (lien vers https://www.facebook.com/watch/live/?v=539265316926153&ref=watch_permalink)",
+    img: [TFC2, TFC4, TFC6],
+    video: [TFC1, TFC3, TFC5]
   },
 ]

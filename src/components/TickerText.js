@@ -20,7 +20,7 @@ function TickerText() {
 
   return (
     <div className="ticker__container">
-      <Ticker>
+      <Ticker className="ticker__container">
         {() => (
           //({}) => ... to pass props
           <p className="ticker__text">

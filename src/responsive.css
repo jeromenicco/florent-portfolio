@@ -26,7 +26,6 @@
 
   .card__text__container {
     line-height: 25px;
-    width: 75%;
   }
   /* .card__text__container:hover {
     cursor: pointer;
@@ -40,6 +39,10 @@
     position: initial;
     display: flex;
     flex-direction: column;
+  }
+
+  .swiper-wrapper {
+
   }
 
   .swiper-button-prev {
@@ -76,9 +79,13 @@
     transform: translateX(0px);
   }
 
-  .swiper-container-horizontal > .swiper-pagination-bullets {
+  /* .swiper-container-horizontal > .swiper-pagination-bullets {
     margin-top: 25px;
-  }
+    width: fit-content;
+    display: flex;
+    align-self: flex-end;
+    z-index: -1;
+  } */
 
   .swiper-pagination-bullet {
     border-radius: 0;
