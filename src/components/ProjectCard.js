@@ -15,11 +15,11 @@ import "./ProjectCard.css"
 function ProjectCard({ item }) {
   SwiperCore.use([Pagination, Navigation])
 
-  console.log(projectList)
+  // const videos = item.img.filter(item => item.includes(".mp4"))
 
-  const data = projectList.filter(item => item.video)
+  // console.log(videos.length)
 
-  console.log(data === true)
+  // videos.map(item => console.log(item))
 
 
   return (
@@ -33,26 +33,24 @@ function ProjectCard({ item }) {
         navigation={true}
       >
         {
-          item.video ?
-          item.video.map((item, index) => (
-            <SwiperSlide key={index}>
-              <video className="project__img" autoPlay muted loop preload="auto" playsInline src={item} alt={item.title} />
-            </SwiperSlide>
-          ))
-          :
+          
           item.img.map((item, index) => (
             <SwiperSlide key={index}>
-              <img className="project__img" src={item} alt={item.title} />
+              {
+                item.includes('.mp4')
+                ?
+                <video className="project__img" autoPlay muted loop preload="auto" playsInline src={item} alt={item.title} />
+                :
+                <img className="project__img" src={item} alt={item.title} />
+              }
             </SwiperSlide>
           ))
         }
       </Swiper>
       <div className="card__text__container">
         <p className="card__title">{item.title}</p>
-        <p>{item.resume}</p>
-        {
-          item.link && <a href={item.url}>{item.link}</a>
-        }
+        <p>{item.resume}{item.link && <a href={item.url}>{item.link}</a>}</p>
+        {/* {item.link && <a href={item.url}>{item.link}</a>} */}
       </div>
     </FadeIn>
   )

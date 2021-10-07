@@ -27,6 +27,14 @@
   width: 75%;
 }
 
+.card__text__container a {
+  color: #fefe00;
+  /* text-shadow: 0 0 10px #fff, 0 0 10px rgba(254, 254, 0, 0.7); */
+  text-decoration: none;
+  margin-top: 10px;
+
+}
+
 .card__title {
   padding-bottom: 10px;
   font-weight: bold;
@@ -101,7 +109,7 @@
 
 .swiper-pagination-bullet-active {
   background-color: #fefe00;
-  box-shadow: 0 0 5px #fff, 0 0 20px rgba(254, 254, 0, 0.7),
-    0 0 10px rgba(254, 254, 0, 0.7);
+  box-shadow: 0 0 5px #fff, 0 0 20px rgba(254, 254, 0, 0),
+    0 0 10px rgba(254, 254, 0, 0);
 }
 
