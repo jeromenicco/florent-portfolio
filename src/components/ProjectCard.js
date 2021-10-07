@@ -36,7 +36,7 @@ function ProjectCard({ item }) {
           item.video ?
           item.video.map((item, index) => (
             <SwiperSlide key={index}>
-              <video className="project__img" autoPlay loop muted defaultMuted playsinline src={item} alt={item.title} />
+              <video className="project__img" autoPlay muted loop src={item} alt={item.title} />
             </SwiperSlide>
           ))
           :
