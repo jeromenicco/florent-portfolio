@@ -6,8 +6,6 @@ import { Swiper, SwiperSlide } from "swiper/react"
 
 import SwiperCore, { Pagination, Navigation} from "swiper"
 
-import { projectList } from "../data"
-
 import "swiper/swiper-bundle.css"
 
 import "./ProjectCard.css"
