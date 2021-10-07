@@ -54,7 +54,9 @@ export const projectList = [
   },
   {
     title: "The Final Countdown",
-    resume: "Talk-show en ligne d’ArianeGroup qui parle de l’espace. Identité visuelle, habillage graphique, motion design. Voir l’émission (lien vers https://www.facebook.com/watch/live/?v=539265316926153&ref=watch_permalink)",
+    resume: "Talk-show en ligne d’ArianeGroup qui parle de l’espace. Identité visuelle, habillage graphique, motion design.",
+    link: "Voir l'émission.",
+    url: "https://www.facebook.com/watch/live/?v=539265316926153&ref=watch_permalink",
     img: [TFC2, TFC4, TFC6],
     video: [TFC1, TFC3, TFC5]
   },
