@@ -61,7 +61,7 @@ function ProjectCard({ item, full, setFull }) {
         }
       </Swiper>
       <div className="card__text__container">
-        <p className="card__title" onClick={() => setFull(!full)}>{item.title}</p>
+        <p className="card__title" onClick={() => console.log(item)}>{item.title}</p>
         <p>{item.resume}{item.link && <a href={item.url}>{item.link}</a>}</p>
         {/* {item.link && <a href={item.url}>{item.link}</a>} */}
       </div>
