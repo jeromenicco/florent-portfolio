@@ -10,6 +10,10 @@
   /* font-size: 25px; */
 }
 
+.infos__mail__link {
+  color: #fefe00;
+}
+
 .infos__content1 {
   width: 300px;
 }

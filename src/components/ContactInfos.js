@@ -13,7 +13,7 @@ function ContactInfos() {
         marques.
       </p>
       <p className="infos__content2">
-        Contactez-moi à l'adresse florent.texier@protonmail.com !
+        Contactez-moi à l'adresse <a className='infos__mail__link' href='mailto:florent.texier@protonmail.com'>florent.texier@protonmail</a> !
       </p>
       <p className="infos__content3">
         Références :<br />
