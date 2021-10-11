@@ -28,9 +28,8 @@
 }
 
 .card__text__container a {
-  color: #fefe00;
+  color: #fe7b7b;
   /* text-shadow: 0 0 10px #fff, 0 0 10px rgba(254, 254, 0, 0.7); */
-  text-decoration: none;
   margin-top: 10px;
 
 }

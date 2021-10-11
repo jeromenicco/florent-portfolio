@@ -1,6 +1,6 @@
 .top__bar__container {
   position: relative;
-  height: 50px;
+  height: 40px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -19,7 +19,7 @@
 .emoji__rail {
   display: flex;
   position: absolute;
-  top: -20px;
+  top: -30px;
   margin-top: 0px;
   height: 70px;
   width: 50px;

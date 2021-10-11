@@ -21,7 +21,8 @@ function ProjectCard({ item }) {
   const isDesktop = useMediaQuery({ query: '(min-width: 800px)' })
 
   const handleFullScreen = () => {
-    dispatch(setProject(item)) && dispatch(setVisible(true))
+    dispatch(setProject(item))
+    dispatch(setVisible(true))
   }
 
   return (

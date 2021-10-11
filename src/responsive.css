@@ -107,6 +107,9 @@
     font-size: 30px;
   }
 
+  .emoji__rail {
+    height: 60px;
+  }
   .top__bar__container p {
     font-size: 30px;
   }
