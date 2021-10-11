@@ -1,31 +1,20 @@
-import React, {} from "react"
+import React from "react"
 
 import FadeIn from "react-fade-in"
 
 import { Swiper, SwiperSlide } from "swiper/react"
-
 import SwiperCore, { Pagination, Navigation} from "swiper"
 
-import { projectList } from '../data'
+import { useDispatch } from "react-redux";
+import { setVisible, setProject } from "../redux/slices/fullScreenSlice";
 
 import "swiper/swiper-bundle.css"
 
 import "./ProjectCard.css"
 
-function ProjectCard({ item, full, setFull }) {
+function ProjectCard({ item }) {
   SwiperCore.use([Pagination, Navigation])
-
-
-
-  console.log(projectList)
-  console.log('FULL ? ', full)
-
-  // const videos = item.img.filter(item => item.includes(".mp4"))
-
-  // console.log(videos.length)
-
-  // videos.map(item => console.log(item))
-
+  const dispatch = useDispatch()
 
   return (
     <FadeIn className="card__container">
@@ -61,7 +50,8 @@ function ProjectCard({ item, full, setFull }) {
         }
       </Swiper>
       <div className="card__text__container">
-        <p className="card__title" onClick={() => console.log(item)}>{item.title}</p>
+        {/* <p className="card__title" onClick={() => console.log(item)}>{item.title}</p> */}
+        <p className="card__title" onClick={() => dispatch(setProject(item)) && dispatch(setVisible(true))}>{item.title}</p>
         <p>{item.resume}{item.link && <a target="_blank" rel="noreferrer" href={item.url}>{item.link}</a>}</p>
         {/* {item.link && <a href={item.url}>{item.link}</a>} */}
       </div>
