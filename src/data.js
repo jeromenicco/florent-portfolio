@@ -30,6 +30,17 @@ import TFC4 from "./assets/images/TFC/TFC4.jpg"
 import TFC5 from "./assets/images/TFC/TFC5_ROCKET.mp4"
 import TFC6 from "./assets/images/TFC/TFC6.jpg"
 
+import KONBINI01 from './assets/images/KONBINI/KONBINI01.jpg'
+import KONBINI02 from './assets/images/KONBINI/KONBINI02.mp4'
+import KONBINI03 from './assets/images/KONBINI/KONBINI03.mp4'
+import KONBINI04 from './assets/images/KONBINI/KONBINI04.mp4'
+
+import RICHEMONT from './assets/images/RICHEMONT/RICHEMONT.jpg'
+import RICHEMONT2 from './assets/images/RICHEMONT/RICHEMONT2.jpg'
+import RICHEMONT3 from './assets/images/RICHEMONT/RICHEMONT3.jpg'
+import RICHEMONT4 from './assets/images/RICHEMONT/RICHEMONT4.jpg'
+import RICHEMONT5 from './assets/images/RICHEMONT/RICHEMONT5.jpg'
+
 export const projectList = [
   {
     title: "Usbek & Rica magazine",
@@ -58,6 +69,17 @@ export const projectList = [
     link: "Voir l'émission.",
     url: "https://www.facebook.com/watch/live/?v=539265316926153&ref=watch_permalink",
     img: [TFC1, TFC2, TFC3, TFC4, TFC5, TFC6],
-    // video: [TFC1, TFC3, TFC5]
+  },
+  {
+    title: "Konbini x N26",
+    resume: "Vidéo retraçant l’histoire des néobanques.Montage, motion design.",
+    link: "Voir la vidéo.",
+    url: "https://www.facebook.com/konbinifr/videos/512529209883788/?app=fbl",
+    img: [KONBINI01, KONBINI02, KONBINI03, KONBINI04],
+  },
+  {
+    title: "Richemont",
+    resume: "Étude sur le futur du tailoring et du costume.Direction artistique, mise en page.",
+    img: [RICHEMONT, RICHEMONT2, RICHEMONT3, RICHEMONT4, RICHEMONT5],
   },
 ]
