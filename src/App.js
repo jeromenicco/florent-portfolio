@@ -25,7 +25,7 @@ function App() {
       { !isVisible && <BottomBar history={history} /> }
       <ScrollToTop>
         <Switch>
-          <Route exact path="/" component={Home} isVisible={isVisible} />
+          <Route exact path="/" component={Home} />
           <Route exact path="/contact" component={Contact} />
         </Switch>
       </ScrollToTop>

@@ -4,6 +4,8 @@ import { useDispatch } from "react-redux"
 
 import SwiperCore, { Pagination, Navigation} from "swiper"
 
+import { ImArrowLeft } from "react-icons/im";
+
 import FadeIn from "react-fade-in"
 
 import "./ProjectFull.css"
@@ -41,8 +43,11 @@ function ProjectFull({ fullProject }) {
           ))
         }
     </FadeIn>
-
-    <p className='back__home' onClick={() => dispatch(setVisible(false))}>Back to home</p>
+    
+    <div className='back__arrow__container' onClick={() => dispatch(setVisible(false))}>
+      <ImArrowLeft className='arrow'/>
+      <p className='back__home'>Back to home</p>
+    </div>
 
 
       {/* <div className='text__container__full'>
