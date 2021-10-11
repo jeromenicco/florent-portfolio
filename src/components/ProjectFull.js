@@ -1,13 +1,17 @@
 import React from "react"
 
+import { useDispatch } from "react-redux"
+
 import SwiperCore, { Pagination, Navigation} from "swiper"
 
 import FadeIn from "react-fade-in"
 
 import "./ProjectFull.css"
+import { setVisible } from "../redux/slices/fullScreenSlice"
 
 function ProjectFull({ fullProject }) {
   SwiperCore.use([Pagination, Navigation])
+  const dispatch = useDispatch()
   return (
     <>
     <FadeIn className='full__container'>
@@ -33,14 +37,15 @@ function ProjectFull({ fullProject }) {
             </div>
           ))
         }
-
     </FadeIn>
-      <div className='text__container__full'>
-        {/* <p className="card__title" onClick={() => console.log(item)}>{item.title}</p> */}
+
+    <p className='back__home' onClick={() => dispatch(setVisible(false))}>Back to home</p>
+
+
+      {/* <div className='text__container__full'>
         <p className='title__full'>{fullProject.title}</p>
         <p>{fullProject.resume}{fullProject.link && <a target="_blank" rel="noreferrer" href={fullProject.url}>{fullProject.link}</a>}</p>
-        {/* {item.link && <a href={item.url}>{item.link}</a>} */}
-      </div>
+      </div> */}
       </>
   )
 }

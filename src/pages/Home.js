@@ -13,11 +13,9 @@ import "./Home.css"
 function Home() {
   const isVisible = useSelector(state => state.fullScreen.visible)
   const fullProject = useSelector(state => state.fullScreen.project)
-    console.log('IS VISI', isVisible)
-    console.log(fullProject)
 
   return (
-    <div className="home__container">
+    <div className={!isVisible ? "home__container" : "home__container__full"}>
       <div className="dum__space__home" />
       {
         !isVisible ?
@@ -33,6 +31,7 @@ function Home() {
 
 
       {
+        !isVisible &&
         projectList.length %2 !== 0 && !isVisible && <div style={{ width: '48%' }} />
       }
 

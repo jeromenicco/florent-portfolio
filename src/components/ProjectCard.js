@@ -8,6 +8,8 @@ import SwiperCore, { Pagination, Navigation} from "swiper"
 import { useDispatch } from "react-redux";
 import { setVisible, setProject } from "../redux/slices/fullScreenSlice";
 
+import { useMediaQuery } from 'react-responsive'
+
 import "swiper/swiper-bundle.css"
 
 import "./ProjectCard.css"
@@ -15,6 +17,12 @@ import "./ProjectCard.css"
 function ProjectCard({ item }) {
   SwiperCore.use([Pagination, Navigation])
   const dispatch = useDispatch()
+
+  const isDesktop = useMediaQuery({ query: '(min-width: 800px)' })
+
+  const handleFullScreen = () => {
+    dispatch(setProject(item)) && dispatch(setVisible(true))
+  }
 
   return (
     <FadeIn className="card__container">
@@ -50,10 +58,8 @@ function ProjectCard({ item }) {
         }
       </Swiper>
       <div className="card__text__container">
-        {/* <p className="card__title" onClick={() => console.log(item)}>{item.title}</p> */}
-        <p className="card__title" onClick={() => dispatch(setProject(item)) && dispatch(setVisible(true))}>{item.title}</p>
+        <p className="card__title" onClick={isDesktop && handleFullScreen}>{item.title}</p>
         <p>{item.resume}{item.link && <a target="_blank" rel="noreferrer" href={item.url}>{item.link}</a>}</p>
-        {/* {item.link && <a href={item.url}>{item.link}</a>} */}
       </div>
     </FadeIn>
   )

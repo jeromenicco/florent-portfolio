@@ -1,4 +1,4 @@
-.full__container {
+/* .full__container {
     display: flex;
     overflow-x: scroll;
     
@@ -11,13 +11,13 @@
 }
 
 .full__project__img {
-    width: 780px;
+    width: 900px;
 }
 
 .text__container__full {
     position: absolute;
-    left: 20px;
-    bottom: -20px;
+    left: 30px;
+    bottom: 70px;
     font-family: "InknutAntiqua-Light";
     color: #fe7b7b;
     line-height: 20px;
@@ -26,4 +26,4 @@
 .title__full {
     font-weight: bold;
     font-size: 20px;
-}
+} */

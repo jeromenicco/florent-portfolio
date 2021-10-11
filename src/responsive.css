@@ -7,6 +7,17 @@
     padding-top: 80px;
     padding-bottom: 70px;
   }
+
+  .home__container__full {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    width: 100%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+
+  
   .card__container {
     width: 48%;
     margin: 0;
@@ -18,6 +29,7 @@
 
   .card__text__container {
     line-height: 25px;
+    font-size: 16px;
   }
 
 
@@ -119,4 +131,45 @@
   .infos__content1 {
     width: 600px;
   }
+  .full__container {
+    display: flex;
+    overflow-x: scroll;
+    
+  }
+  
+  .horizontal__container {
+    width: 100%;
+    max-height: 100%;
+    margin-left: 20px;
+    position: relative;
+  }
+  
+  .full__project__img {
+    max-height: 90vh;
+  }
+
+  .back__home {
+    position: absolute;
+    color: #fe7b7b;
+    font-size: 25px;
+    font-family: "InknutAntiqua-Light";
+    left: 20px;
+    bottom: -25px;
+    cursor: pointer;
+  }
+  
+  /* .text__container__full {
+    position: absolute;
+    left: 30px;
+    bottom: 70px;
+    font-family: "InknutAntiqua-Light";
+    color: #fe7b7b;
+    line-height: 20px;
+  }
+  
+  .title__full {
+    font-weight: bold;
+    font-size: 20px;
+  } */
 }
+
