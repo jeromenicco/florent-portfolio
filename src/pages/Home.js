@@ -22,6 +22,9 @@ function Home() {
           />
         ))
         }
+        {
+          projectList.length %2 !== 0 && <div style={{ width: '48%' }} />
+        }
       <div className="dum__space__home" />
     </div>
   )
