@@ -10,7 +10,7 @@ function Contact() {
   const dispatch = useDispatch()
   useEffect(() => {
     dispatch(setVisible(false))
-  }, [])
+  }, [dispatch])
   return (
     <div className="contact__container">
       <ContactInfos />
