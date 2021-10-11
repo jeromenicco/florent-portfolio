@@ -134,7 +134,10 @@
   .full__container {
     display: flex;
     overflow-x: scroll;
-    
+  }
+
+  .full__container::-webkit-scrollbar {
+    display: none;
   }
   
   .horizontal__container {
