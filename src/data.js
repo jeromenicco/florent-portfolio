@@ -49,8 +49,7 @@ export const projectList = [
   },
   {
     title: "DATADRAMA",
-    resume:
-      "Roman graphique de science-fiction sur la technologie et la pornographie Illustrations digitales",
+    resume: "Roman graphique de science-fiction sur la technologie et la pornographie Illustrations digitales",
     img: [DD1, DD2, DD3, DD4, DD5],
   },
   {
