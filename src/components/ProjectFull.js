@@ -1,6 +1,5 @@
 import React from "react"
 
-import { Swiper, SwiperSlide } from "swiper/react"
 import SwiperCore, { Pagination, Navigation} from "swiper"
 
 import FadeIn from "react-fade-in"
