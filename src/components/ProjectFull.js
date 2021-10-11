@@ -10,8 +10,11 @@ import "./ProjectFull.css"
 import { setVisible } from "../redux/slices/fullScreenSlice"
 
 function ProjectFull({ fullProject }) {
+
   SwiperCore.use([Pagination, Navigation])
+
   const dispatch = useDispatch()
+  
   return (
     <>
     <FadeIn className='full__container'>
