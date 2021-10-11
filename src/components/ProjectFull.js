@@ -10,23 +10,16 @@ import "./ProjectFull.css"
 function ProjectFull({ fullProject }) {
   SwiperCore.use([Pagination, Navigation])
   return (
-    <FadeIn className="card__container">
-      <Swiper
-        className="swiper__container"
-        slidesPerView={1}
-        spaceBetween={10}
-        loop={true}
-        pagination
-        navigation={true}
-      >
+    <>
+    <FadeIn className='full__container'>
         {
           fullProject.img.map((item, index) => (
-            <SwiperSlide key={index}>
+            <div className='horizontal__container' key={index}>
               {
                 item.includes('.mp4')
                 ?
                 <video
-                  className="project__img"
+                  className="full__project__img"
                   autoPlay
                   muted
                   loop
@@ -36,20 +29,20 @@ function ProjectFull({ fullProject }) {
                   alt={item.title}
                 />
                 :
-                <img className="project__img" src={item} alt={item.title} />
+                <img className="full__project__img" src={item} alt={item.title} />
               }
-            </SwiperSlide>
+            </div>
           ))
         }
-      </Swiper>
 
-      <div className="card__text__container">
+    </FadeIn>
+      <div className='text__container__full'>
         {/* <p className="card__title" onClick={() => console.log(item)}>{item.title}</p> */}
-        <p className="card__title">{fullProject.title}</p>
+        <p className='title__full'>{fullProject.title}</p>
         <p>{fullProject.resume}{fullProject.link && <a target="_blank" rel="noreferrer" href={fullProject.url}>{fullProject.link}</a>}</p>
         {/* {item.link && <a href={item.url}>{item.link}</a>} */}
       </div>
-    </FadeIn>
+      </>
   )
 }
 
