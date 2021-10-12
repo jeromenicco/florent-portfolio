@@ -97,6 +97,7 @@
   position: initial;
   width: auto;
   margin-top: 20px;
+  /* margin-right: -2px; */
   margin-bottom: 20px;
   order: 1;
   width: fit-content;

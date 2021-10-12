@@ -75,11 +75,7 @@
   }
 
   /* .swiper-container-horizontal > .swiper-pagination-bullets {
-    margin-top: 25px;
-    width: fit-content;
-    display: flex;
-    align-self: flex-end;
-    z-index: -1;
+    margin-right: -2px;
   } */
 
   .swiper-pagination-bullet {
