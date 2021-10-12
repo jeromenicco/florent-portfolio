@@ -21,10 +21,10 @@ function ProjectFull({ fullProject }) {
 
   // console.log('MOUSSSE', scrollContainer)
 
-  containerRef.addEventListener("wheel", (e) => {
-    e.preventDefault();
-    containerRef.scrollLeft += e.deltaY;
-  });
+  // containerRef.addEventListener("wheel", (e) => {
+  //   e.preventDefault();
+  //   containerRef.scrollLeft += e.deltaY;
+  // });
   
   return (
     <>
