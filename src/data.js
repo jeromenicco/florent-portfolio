@@ -49,7 +49,7 @@ export const projectList = [
   },
   {
     title: "DATADRAMA",
-    resume: `Roman graphique de science-fiction sur la technologie et la pornographie\nIllustrations digitales`,
+    resume: "Roman graphique de science-fiction sur la technologie et la pornographie\nIllustrations digitales",
     img: [DD1, DD2, DD3, DD4, DD5],
   },
   {
@@ -59,26 +59,26 @@ export const projectList = [
   },
   {
     title: "L’autre Canal — Nancy",
-    resume: "Programmes trimestriels des concerts de musiques actuelles.Identité visuelle, mise en page, illustration.",
+    resume: "Programmes trimestriels des concerts de musiques actuelles.\nIdentité visuelle, mise en page, illustration.",
     img: [LAC1, LAC2, LAC3, LAC4],
   },
   {
     title: "The Final Countdown",
-    resume: "Talk-show en ligne d’ArianeGroup qui parle de l’espace. Identité visuelle, habillage graphique, motion design.",
+    resume: "Talk-show en ligne d’ArianeGroup qui parle de l’espace.\nIdentité visuelle, habillage graphique, motion design.",
     link: "Voir l'émission.",
     url: "https://www.facebook.com/watch/live/?v=539265316926153&ref=watch_permalink",
     img: [TFC1, TFC2, TFC3, TFC4, TFC5, TFC6],
   },
   {
     title: "Konbini x N26",
-    resume: "Vidéo retraçant l’histoire des néobanques.Montage, motion design.",
+    resume: "Vidéo retraçant l’histoire des néobanques.\nMontage, motion design.",
     link: "Voir la vidéo.",
     url: "https://www.facebook.com/konbinifr/videos/512529209883788/?app=fbl",
     img: [KONBINI01, KONBINI02, KONBINI03, KONBINI04],
   },
   {
     title: "Richemont",
-    resume: "Étude sur le futur du tailoring et du costume.Direction artistique, mise en page.",
+    resume: "Étude sur le futur du tailoring et du costume.\nDirection artistique, mise en page.",
     img: [RICHEMONT, RICHEMONT2, RICHEMONT3, RICHEMONT4, RICHEMONT5],
   },
 ]

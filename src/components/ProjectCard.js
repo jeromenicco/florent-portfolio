@@ -10,6 +10,8 @@ import { setVisible, setProject } from "../redux/slices/fullScreenSlice";
 
 import { useMediaQuery } from 'react-responsive'
 
+import { ImArrowLeft } from "react-icons/im";
+
 import "swiper/swiper-bundle.css"
 
 import "./ProjectCard.css"
@@ -59,8 +61,14 @@ function ProjectCard({ item }) {
         }
       </Swiper>
       <div className="card__text__container">
-        <p className="card__title" onClick={isDesktop && handleFullScreen}>{item.title}</p>
-        <p>{item.resume}{item.link && <a target="_blank" rel="noreferrer" href={item.url}>{item.link}</a>}</p>
+        <div className='title__arrow__container' onClick={isDesktop && handleFullScreen}>
+          <p className="card__title">{item.title}</p>
+          { isDesktop && <ImArrowLeft className='arrow arrow__home'/>}
+        </div>
+        <div>
+          {item.resume.split('\n').map((str, index) => <p key={index}>{str}</p>)}
+          {item.link && <a target="_blank" rel="noreferrer" href={item.url}>{item.link}</a>}
+        </div>
       </div>
     </FadeIn>
   )

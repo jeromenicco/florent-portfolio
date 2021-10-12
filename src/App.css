@@ -39,4 +39,6 @@
 
 body {
   background: #3f002f;
+  /* overscroll-behavior-y: none;  */
+  /* disable bounces -> chrome, mz */
 }

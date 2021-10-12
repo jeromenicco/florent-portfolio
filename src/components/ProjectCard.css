@@ -24,7 +24,16 @@
 
 .card__text__container p {
   margin: 0;
-  width: 75%;
+  width: 100%;
+}
+
+.title__arrow__container {
+  cursor: pointer;
+}
+
+.arrow__home {
+  margin-left: 10px;
+  min-width: 15px
 }
 
 .card__text__container a {
@@ -37,7 +46,6 @@
 .card__title {
   padding-bottom: 10px;
   font-weight: bold;
-  cursor: pointer;
 }
 
 /* .card__title:hover {

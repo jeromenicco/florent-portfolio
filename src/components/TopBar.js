@@ -17,59 +17,59 @@ function TopBar() {
   const emojiSpring = useSpring({
     loop: true,
     from: {
-      transform: `translate(-${screenWidth * 2}px)`,
+      transform: `translate(-100%)`,
     },
     to: {
       transform: `translate(${screenWidth}px)`,
     },
     config: {
-      duration: screenWidth * 5.5,
-
-      delay: 500,
+      duration: Math.random() * (9000 - 4000) + 4000,
     },
   })
 
-  const emojiSpring2 = useSpring({
-    loop: true,
-    from: {
-      transform: `translate(-${screenWidth}px)`,
-    },
-    to: {
-      transform: `translate(${screenWidth}px)`,
-    },
-    config: {
-      duration: screenWidth * 6,
-      // duration: 8000,
-      delay: 5000,
-    },
-  })
+  console.log(emojiSpring)
 
-  const emojiSpring3 = useSpring({
-    loop: true,
-    from: {
-      transform: `translate(-${screenWidth + screenWidth}px)`,
-    },
-    to: {
-      transform: `translate(${screenWidth}px)`,
-    },
-    config: {
-      duration: screenWidth * 9.3,
-      delay: 2000,
-    },
-  })
+  // const emojiSpring2 = useSpring({
+  //   loop: true,
+  //   from: {
+  //     transform: `translate(-${screenWidth}px)`,
+  //   },
+  //   to: {
+  //     transform: `translate(${screenWidth}px)`,
+  //   },
+  //   config: {
+  //     duration: screenWidth * 6,
+  //     // duration: 8000,
+  //     delay: 5000,
+  //   },
+  // })
 
-  const emojiSpring4 = useSpring({
-    loop: true,
-    from: {
-      transform: `translate(-${screenWidth * 1.5}px)`,
-    },
-    to: {
-      transform: `translate(${screenWidth}px)`,
-    },
-    config: {
-      duration: screenWidth * 5.2,
-    },
-  })
+  // const emojiSpring3 = useSpring({
+  //   loop: true,
+  //   from: {
+  //     transform: `translate(-${screenWidth + screenWidth}px)`,
+  //   },
+  //   to: {
+  //     transform: `translate(${screenWidth}px)`,
+  //   },
+  //   config: {
+  //     duration: screenWidth * 9.3,
+  //     delay: 2000,
+  //   },
+  // })
+
+  // const emojiSpring4 = useSpring({
+  //   loop: true,
+  //   from: {
+  //     transform: `translate(-${screenWidth * 1.5}px)`,
+  //   },
+  //   to: {
+  //     transform: `translate(${screenWidth}px)`,
+  //   },
+  //   config: {
+  //     duration: screenWidth * 5.2,
+  //   },
+  // })
 
   return (
     <div className="top__bar__container">
@@ -82,7 +82,7 @@ function TopBar() {
         <img src={unicornEMOJI} alt="unicorn-emoji" />
       </animated.div>
 
-      <animated.div
+      {/* <animated.div
         style={{
           ...emojiSpring2,
         }}
@@ -107,7 +107,7 @@ function TopBar() {
         className="emoji__rail"
       >
         <img src={bearEMOJI} alt="bear-emoji" />
-      </animated.div>
+      </animated.div> */}
         <TickerText />
     </div>
   )
