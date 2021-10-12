@@ -1,4 +1,4 @@
-import React, { useRef } from "react"
+import React from "react"
 
 import { useDispatch } from "react-redux"
 
@@ -17,18 +17,10 @@ function ProjectFull({ fullProject }) {
 
   const dispatch = useDispatch()
 
-  const containerRef = useRef()
-
-  // console.log('MOUSSSE', scrollContainer)
-
-  // containerRef.addEventListener("wheel", (e) => {
-  //   e.preventDefault();
-  //   containerRef.scrollLeft += e.deltaY;
-  // });
   
   return (
     <>
-    <FadeIn ref={containerRef} className='full__container'>
+    <FadeIn className='full__container'>
         {
           fullProject.img.map((item, index) => (
             <div className='horizontal__container' key={index}>

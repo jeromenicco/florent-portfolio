@@ -108,8 +108,7 @@ function TopBar() {
       >
         <img src={bearEMOJI} alt="bear-emoji" />
       </animated.div>
-
-      <TickerText screenWidth={screenWidth} />
+        <TickerText />
     </div>
   )
 }

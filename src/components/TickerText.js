@@ -1,4 +1,4 @@
-import React, { useRef, useEffect} from "react"
+import React from "react"
 
 import Ticker from "react-ticker"
 
@@ -18,25 +18,21 @@ function TickerText() {
   //   }
   // }, [viewWidth])
 
-  const tickerRef = useRef(null)
-  useEffect(() => {
-    console.log("width", tickerRef.current.offsetWidth);
-  }, []);
-
-
+  // const tickerRef = useRef(null)
+  // useEffect(() => {
+  //   console.log("tickerREF width", tickerRef.current.offsetWidth);
+  // }, []);
 
   return (
-    <div ref={tickerRef} className="ticker__container">
+    <div className="ticker__container">
       <Ticker>
-        {() => (
+        {({index}) => (
           //({}) => ... to pass props
-          <div>
-          <p className="ticker__text">
-            Hi! I am Florent, art director, motion designer and visual artist.
-            Salut! Je suis Florent, directeur artistique, motion designer et
-            artiste visuel.
-          </p>
-          </div>
+            <p className="ticker__text">
+              Hi! I am Florent, art director, motion designer and visual artist. 
+              Salut! Je suis Florent, directeur artistique, motion designer et
+              artiste visuel.
+            </p>
         )}
       </Ticker>
     </div>
