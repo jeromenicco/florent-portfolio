@@ -40,10 +40,12 @@ function ProjectCard({ item }) {
         loop={true}
         pagination
         navigation={isDesktop ? true : false}
+        allowTouchMove={isDesktop ? false : true}
+        
       >
         {
           item.img.map((item, index) => (
-            <SwiperSlide key={index}>
+            <SwiperSlide key={index} onClick={isDesktop ? handleFullScreen : null}>
                 {
                   item.includes('.mp4')
                   ?
@@ -61,8 +63,8 @@ function ProjectCard({ item }) {
                   // </LazyLoadComponent>
                   :
                   // <LazyLoadComponent>
-                  <LazyLoadImage className="project__img" effect='opacity' src={item} alt={item.title} />
-                    // <img className="project__img" src={item} alt={item.title} />
+                  // <LazyLoadImage className="project__img" effect="blur" src={item} alt={item.title} />
+                    <img className="project__img" src={item} alt={item.title} />
                   // </LazyLoadComponent>
                 }
               </SwiperSlide>

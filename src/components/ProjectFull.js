@@ -17,13 +17,20 @@ function ProjectFull({ fullProject }) {
 
   const dispatch = useDispatch()
 
+  const item = document.getElementById("MAIN");
+
+  window.addEventListener("wheel", function (e) {
+    if (e.deltaY > 0) item.scrollLeft += 100;
+    else item.scrollLeft -= 100;
+  });
+
   
   return (
     <>
     <FadeIn className='full__container'>
         {
           fullProject.img.map((item, index) => (
-            <div className='horizontal__container' key={index}>
+            <div className='horizontal__container' id="MAIN" key={index}>
               {
                 item.includes('.mp4')
                 ?
