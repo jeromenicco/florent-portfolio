@@ -6,7 +6,7 @@ import { useDispatch } from "react-redux";
 import { setVisible, setProject } from "../redux/slices/fullScreenSlice";
 import { useMediaQuery } from 'react-responsive'
 import { ImArrowRight } from "react-icons/im";
-import { LazyLoadImage } from 'react-lazy-load-image-component';
+// import { LazyLoadImage } from 'react-lazy-load-image-component';
 
 import "swiper/swiper-bundle.css"
 import "./ProjectCard.css"
@@ -51,8 +51,9 @@ function ProjectCard({ item }) {
                   />
                   :
                   <div>
-                    <LazyLoadImage className="project__img" src={item} alt={item.title} />
-                    <span value={item[0]} />
+                    {/* <LazyLoadImage className="project__img" src={item} alt={item.title} />
+                    <span value={item[0]} /> */}
+                    <img className="project__img" src={item} alt={item.title} />
                   </div>
                 }
               </SwiperSlide>
