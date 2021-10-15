@@ -1,17 +1,11 @@
 import React, { useState } from "react"
-
 import PageVisibility from 'react-page-visibility'
-
 import Ticker from "react-ticker"
 
 import "./TickerText.css"
 
-
 function TickerText() {
   const [pageIsVisible, setPageIsVisible] = useState(true)
-  // const [webFontLoaded, setWebFontLoaded] = useState(false)
-  // console.log(webFontLoaded)
-
   const WebFont = require('webfontloader')
   
     WebFont.load({

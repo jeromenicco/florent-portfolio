@@ -1,7 +1,5 @@
 import React from "react"
-
 import { useDispatch } from "react-redux"
-
 import { setVisible } from '../redux/slices/fullScreenSlice'
 
 import "./BottomBar.css"

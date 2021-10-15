@@ -1,6 +1,5 @@
 import React, { useEffect } from "react"
 import { useDispatch } from "react-redux"
-
 import ContactInfos from "../components/ContactInfos"
 import { setVisible } from "../redux/slices/fullScreenSlice"
 

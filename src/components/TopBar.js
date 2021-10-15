@@ -1,8 +1,6 @@
 import React from "react"
 import TickerText from "./TickerText"
-
 import Emoji from './Emoji'
-
 import heartEMOJI from "../assets/gifs/EMOJI_COEUR.gif"
 import faceEMOJI from "../assets/gifs/EMOJI_FACE.gif"
 import unicornEMOJI from "../assets/gifs/EMOJI_LICORNE.gif"

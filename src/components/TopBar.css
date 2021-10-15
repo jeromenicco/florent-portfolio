@@ -10,12 +10,10 @@
   width: 100%;
   z-index: 2;
 }
-
 .top__bar__container p {
   color: #fe7b7b;
   font-size: 23px;
 }
-
 .emoji__rail {
   display: flex;
   position: absolute;
@@ -27,12 +25,10 @@
   padding-left: 0px;
   overflow: hidden;
 }
-
 .emoji__rail img {
   width: 100px;
   height: 100px;
 }
-
 /* .emoji__rotate {
   font-size: 55px;
   text-shadow: 0 0 15px#fe7b7b;

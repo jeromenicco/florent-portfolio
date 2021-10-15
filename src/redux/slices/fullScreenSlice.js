@@ -1,6 +1,4 @@
-
-   
-import { createSlice } from "@reduxjs/toolkit";
+import { createSlice } from "@reduxjs/toolkit"
 
 export const fullScreenSlice = createSlice({
   name: "fullScreen",
@@ -10,14 +8,13 @@ export const fullScreenSlice = createSlice({
   },
   reducers: {
     setVisible: (state, action) => {
-      state.visible = action.payload;
+      state.visible = action.payload
     },
     setProject: (state, action) => {
-        state.project = action.payload;
+        state.project = action.payload
     }
   },
 });
 
-export const { setVisible, setProject } = fullScreenSlice.actions;
-
-export default fullScreenSlice.reducer;
+export const { setVisible, setProject } = fullScreenSlice.actions
+export default fullScreenSlice.reducer

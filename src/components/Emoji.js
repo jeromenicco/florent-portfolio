@@ -1,5 +1,4 @@
 import React, {useState} from 'react'
-
 import { useSpring, animated } from "react-spring"
 
 const Emoji = ({src}) => {
@@ -26,8 +25,6 @@ const Emoji = ({src}) => {
             duration: random,
         },
     })
-
-    // console.log(emojiSpring)
 
     return (
         <animated.div

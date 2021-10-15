@@ -1,17 +1,14 @@
 import React from 'react'
-
 import { Switch, Route } from "react-router-dom"
 import { useHistory } from "react-router-dom"
 import { useSelector } from "react-redux";
 
 import Home from "./pages/Home"
 import Contact from "./pages/Contact"
-
 import BottomBar from "./components/BottomBar"
 import TopBar from "./components/TopBar"
 
 import ScrollToTop from "./effects/ScrollToTop"
-
 
 import "./App.css"
 import "./responsive.css"
