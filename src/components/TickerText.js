@@ -3,16 +3,16 @@ import PageVisibility from 'react-page-visibility'
 import Ticker from "react-ticker"
 
 import "./TickerText.css"
+const WebFont = require('webfontloader')
 
 function TickerText() {
   const [pageIsVisible, setPageIsVisible] = useState(true)
-  const WebFont = require('webfontloader')
   
-    WebFont.load({
+  WebFont.load({
       google: {
         families: ["Righteous"]
       }
-    })
+  })
   
   const handleVisibilityChange = (isVisible) => {
     setPageIsVisible(isVisible)
