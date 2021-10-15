@@ -13,7 +13,7 @@ import { useMediaQuery } from 'react-responsive'
 import { ImArrowRight } from "react-icons/im";
 
 // import { LazyLoadComponent } from 'react-lazy-load-image-component';
-import { LazyLoadImage } from 'react-lazy-load-image-component';
+// import { LazyLoadImage } from 'react-lazy-load-image-component';
 
 
 import "swiper/swiper-bundle.css"

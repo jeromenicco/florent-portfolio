@@ -1,7 +1,4 @@
 import React from "react"
-
-import { useSpring, animated } from "react-spring"
-
 import TickerText from "./TickerText"
 
 import Emoji from './Emoji'
