@@ -1,26 +1,45 @@
-import React from "react"
+import React, { useState } from "react"
 
-// import { usePageVisible } from "../effects/usePageVisible"
+import PageVisibility from 'react-page-visibility'
 
 import Ticker from "react-ticker"
 
 import "./TickerText.css"
 
+
 function TickerText() {
-  // const isPageVisible = usePageVisible();
+  const WebFont = require('webfontloader')
+  const [pageIsVisible, setPageIsVisible] = useState(true)
+ 
+  WebFont.load({
+    google: {
+      families: ["Righteous"]
+    }
+  })
+
+  const handleVisibilityChange = (isVisible) => {
+    setPageIsVisible(isVisible)
+  }
+
+  console.log('WEB FONT', WebFont)
+
   return (
-    <div className="ticker__container">
-      <Ticker>
-        {({index}) => (
-          //({}) => ... to pass props
-            <>
-            <p className='ticker__text'>
-            Hi! I am Florent, art director, motion designer and visual artist. Salut! Je suis Florent, directeur artistique, motion designer et artiste visuel.
-          </p>
-          </>
+    <PageVisibility onChange={handleVisibilityChange}>
+      <div className="ticker__container">
+      {pageIsVisible && (
+        <Ticker>
+          {({index}) => (
+            //({}) => ... to pass props
+              <>
+              <p className='ticker__text'>
+              Hi! I am Florent, art director, motion designer and visual artist. Salut! Je suis Florent, directeur artistique, motion designer et artiste visuel.
+            </p>
+            </>
+          )}
+        </Ticker>
         )}
-      </Ticker>
-    </div>
+      </div>
+    </PageVisibility>
   )
 }
 

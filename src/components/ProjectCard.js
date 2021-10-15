@@ -12,7 +12,9 @@ import { useMediaQuery } from 'react-responsive'
 
 import { ImArrowRight } from "react-icons/im";
 
-import { LazyLoadComponent } from 'react-lazy-load-image-component';
+// import { LazyLoadComponent } from 'react-lazy-load-image-component';
+import { LazyLoadImage } from 'react-lazy-load-image-component';
+
 
 import "swiper/swiper-bundle.css"
 
@@ -45,7 +47,7 @@ function ProjectCard({ item }) {
                 {
                   item.includes('.mp4')
                   ?
-                  <LazyLoadComponent>
+                  // <LazyLoadComponent>
                   <video
                   className="project__img"
                   autoPlay
@@ -56,18 +58,19 @@ function ProjectCard({ item }) {
                   src={item}
                   alt={item.title}
                   />
-                  </LazyLoadComponent>
+                  // </LazyLoadComponent>
                   :
-                  <LazyLoadComponent>
-                    <img className="project__img" src={item} alt={item.title} />
-                  </LazyLoadComponent>
+                  // <LazyLoadComponent>
+                  <LazyLoadImage className="project__img" effect='opacity' src={item} alt={item.title} />
+                    // <img className="project__img" src={item} alt={item.title} />
+                  // </LazyLoadComponent>
                 }
               </SwiperSlide>
           ))
         }
       </Swiper>
       <div className="card__text__container">
-        <div className='title__arrow__container' onClick={isDesktop && handleFullScreen}>
+        <div className='title__arrow__container' onClick={isDesktop ? handleFullScreen : null}>
           { isDesktop && <ImArrowRight className='arrow arrow__home'/>}
           <p className="card__title">{item.title}</p>
         </div>
