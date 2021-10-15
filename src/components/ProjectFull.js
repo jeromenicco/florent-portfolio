@@ -17,12 +17,12 @@ function ProjectFull({ fullProject }) {
 
   const dispatch = useDispatch()
 
-  const item = document.getElementById("MAIN");
+  // const item = document.getElementById("MAIN");
 
-  window.addEventListener("wheel", function (e) {
-    if (e.deltaY > 0) item.scrollLeft += 100;
-    else item.scrollLeft -= 100;
-  });
+  // window.addEventListener("wheel", function (e) {
+  //   if (e.deltaY > 0) item.scrollLeft += 100;
+  //   else item.scrollLeft -= 100;
+  // });
 
   
   return (
