@@ -108,10 +108,10 @@
     max-height: 100vh;
   }
   .back__arrow__container {
-    width: 200px;
+    width: 250px;
     position: absolute;
     color: #fe7b7b;
-    font-size: 20px;
+    font-size: 25px;
     font-family: "InknutAntiqua-Light";
     left: 20px;
     bottom: 0;
