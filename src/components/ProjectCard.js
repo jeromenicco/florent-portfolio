@@ -51,10 +51,9 @@ function ProjectCard({ item }) {
                   />
                   :
                   <div>
-                  <LazyLoadImage className="project__img" src={item} alt={item.title} />
+                    <LazyLoadImage className="project__img" src={item} alt={item.title} />
                     <span value={item[0]} />
                   </div>
-                  
                 }
               </SwiperSlide>
           ))
