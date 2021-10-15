@@ -53,7 +53,6 @@ function ProjectCard({ item }) {
                   autoPlay
                   muted
                   loop
-                  preload="auto"
                   playsInline
                   src={item}
                   alt={item.title}
