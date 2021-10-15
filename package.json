@@ -18,7 +18,8 @@
     "react-spring": "^9.2.4",
     "react-ticker": "^1.2.2",
     "swiper": "^6.8.4",
-    "web-vitals": "^1.0.1"
+    "web-vitals": "^1.0.1",
+    "webfontloader": "^1.6.28"
   },
   "scripts": {
     "start": "react-scripts start",
