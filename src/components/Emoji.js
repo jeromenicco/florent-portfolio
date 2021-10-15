@@ -27,7 +27,7 @@ const Emoji = ({src}) => {
         },
     })
 
-    console.log(emojiSpring)
+    // console.log(emojiSpring)
 
     return (
         <animated.div
