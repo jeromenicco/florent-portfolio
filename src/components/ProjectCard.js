@@ -39,7 +39,7 @@ function ProjectCard({ item }) {
         spaceBetween={10}
         loop={true}
         pagination
-        navigation={true}
+        navigation={isDesktop ? true : false}
       >
         {
           item.img.map((item, index) => (

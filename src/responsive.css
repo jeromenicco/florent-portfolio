@@ -45,6 +45,18 @@
     flex-direction: column;
   }
 
+  /* .swiper-button {
+    display: initial;
+    opacity: 0;
+    color: #fefe00;
+    text-shadow: 0 0 10px #fff, 0 0 10px rgba(254, 254, 0, 0.7);
+    top: 13%;
+    left: 0;
+    padding: 20% 35% 20% 3%;
+    transition: all ease-in-out 0.2s;
+    transform: translateX(+10px);
+  } */
+
 
   .swiper-button-prev {
     display: initial;

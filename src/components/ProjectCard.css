@@ -78,13 +78,15 @@
   align-items: center;
 }
 
-.swiper-button-prev {
+/* managed by props --> navigation={isDesktop ? true : false} */
+
+/* .swiper-button-prev {
   display: none;
 }
 
 .swiper-button-next {
   display: none;
-}
+} */
 
 .swiper-container-horizontal > .swiper-pagination-bullets {
   position: initial;

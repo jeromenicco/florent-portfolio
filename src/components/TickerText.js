@@ -8,25 +8,26 @@ import "./TickerText.css"
 
 
 function TickerText() {
-  const WebFont = require('webfontloader')
   const [pageIsVisible, setPageIsVisible] = useState(true)
- 
-  WebFont.load({
-    google: {
-      families: ["Righteous"]
-    }
-  })
+  // const [webFontLoaded, setWebFontLoaded] = useState(false)
+  // console.log(webFontLoaded)
 
+  const WebFont = require('webfontloader')
+  
+    WebFont.load({
+      google: {
+        families: ["Righteous"]
+      }
+    })
+  
   const handleVisibilityChange = (isVisible) => {
     setPageIsVisible(isVisible)
   }
 
-  console.log('WEB FONT', WebFont)
-
   return (
     <PageVisibility onChange={handleVisibilityChange}>
       <div className="ticker__container">
-      {pageIsVisible && (
+      { pageIsVisible && (
         <Ticker>
           {({index}) => (
             //({}) => ... to pass props
