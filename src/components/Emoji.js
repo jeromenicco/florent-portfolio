@@ -36,7 +36,7 @@ const Emoji = ({src}) => {
             }}
             className="emoji__rail"
         >
-            <img src={src} alt="unicorn-emoji" />
+            <img src={src} alt="emoji-animation" />
       </animated.div>
     )
 }

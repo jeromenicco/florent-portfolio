@@ -12,9 +12,7 @@ import { useMediaQuery } from 'react-responsive'
 
 import { ImArrowRight } from "react-icons/im";
 
-// import { LazyLoadComponent } from 'react-lazy-load-image-component';
-// import { LazyLoadImage } from 'react-lazy-load-image-component';
-
+import { LazyLoadComponent} from 'react-lazy-load-image-component';
 
 import "swiper/swiper-bundle.css"
 
@@ -49,18 +47,18 @@ function ProjectCard({ item }) {
                 {
                   item.includes('.mp4')
                   ?
-                  // <LazyLoadComponent>
-                  <video
-                  className="project__img"
-                  autoPlay
-                  muted
-                  loop
-                  preload="auto"
-                  playsInline
-                  src={item}
-                  alt={item.title}
-                  />
-                  // </LazyLoadComponent>
+                  <LazyLoadComponent>
+                    <video
+                    className="project__img"
+                    autoPlay
+                    muted
+                    loop
+                    preload="auto"
+                    playsInline
+                    src={item}
+                    alt={item.title}
+                    />
+                  </LazyLoadComponent>
                   :
                   // <LazyLoadComponent>
                   // <LazyLoadImage className="project__img" effect="blur" src={item} alt={item.title} />
