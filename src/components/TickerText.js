@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react"
 import PageVisibility from 'react-page-visibility'
 import Ticker from "react-ticker"
+import { Spring, animated } from 'react-spring'
 
 import "./TickerText.css"
 const WebFont = require('webfontloader')
@@ -37,9 +38,20 @@ function TickerText() {
               <Ticker>
                 {({index}) => (
                 <>
-                  <p className={'ticker__text'}>
-                    Hi! I am Florent, art director, motion designer and visual artist. Salut! Je suis Florent, directeur artistique, motion designer et artiste visuel.
-                  </p>
+                  <Spring
+                    from={{opacity: 0}}
+                    to={{ opacity: 1}}
+                    config={{duration: 800}}
+                  >
+                  { styles => (
+                      <animated.div style={styles}>
+                        <p className='ticker__text'>
+                          Hi! I am Florent, art director, motion designer and visual artist. Salut! Je suis Florent, directeur artistique, motion designer et artiste visuel.
+                        </p>
+                      </animated.div>
+                    )}
+                  </Spring>
+                  
                 </>
               )}
               </Ticker>
