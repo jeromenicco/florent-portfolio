@@ -35,7 +35,6 @@ import KONBINI02 from './assets/images/KONBINI/KONBINI02.mp4'
 import KONBINI03 from './assets/images/KONBINI/KONBINI03.mp4'
 import KONBINI04 from './assets/images/KONBINI/KONBINI04.mp4'
 
-
 import RICHEMONT from './assets/images/RICHEMONT/RICHEMONT.jpg'
 import RICHEMONT2 from './assets/images/RICHEMONT/RICHEMONT2.jpg'
 import RICHEMONT3 from './assets/images/RICHEMONT/RICHEMONT3.jpg'
