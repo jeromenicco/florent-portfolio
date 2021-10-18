@@ -44,8 +44,7 @@ function ProjectCard({ item }) {
                     <video
                       className="project__img"
                       autoPlay
-                      preload="true"
-                      // controls
+                      // preload="true"
                       muted
                       loop
                       playsInline

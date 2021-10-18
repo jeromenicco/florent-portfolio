@@ -27,7 +27,6 @@ function TickerText() {
   const handleVisibilityChange = (isVisible) => {
     setPageIsVisible(isVisible)
   }
-  
 
   return (
     <PageVisibility onChange={handleVisibilityChange}>
@@ -41,7 +40,7 @@ function TickerText() {
                   <Spring
                     from={{opacity: 0}}
                     to={{ opacity: 1}}
-                    config={{duration: 800}}
+                    config={{duration: 500}}
                   >
                   { styles => (
                       <animated.div style={styles}>
