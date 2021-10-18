@@ -67,7 +67,7 @@ export const projectList = [
     resume: "Talk-show en ligne d’ArianeGroup qui parle de l’espace.\nIdentité visuelle, habillage graphique, motion design.",
     link: "Voir l'émission.",
     url: "https://www.facebook.com/watch/live/?v=539265316926153&ref=watch_permalink",
-    img: [TFC1, TFC2, TFC3, TFC4, TFC5, TFC6],
+    img: [TFC2, TFC1, TFC3, TFC4, TFC5, TFC6],
   },
   {
     title: "Konbini x N26",

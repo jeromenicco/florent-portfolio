@@ -17,17 +17,17 @@
 .emoji__rail {
   display: flex;
   position: absolute;
-  top: -30px;
+  top: -25px;
   margin-top: 0px;
-  height: 70px;
+  height: 65px;
   width: 60px;
   padding-right: 50px;
   padding-left: 0px;
   overflow: hidden;
 }
 .emoji__rail img {
-  width: 100px;
-  height: 100px;
+  width: 90px;
+  height: 90px;
 }
 /* .emoji__rotate {
   font-size: 55px;

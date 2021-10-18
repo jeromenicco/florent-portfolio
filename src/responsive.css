@@ -24,11 +24,11 @@
     line-height: 25px;
     font-size: 16px;
   }
-  .title__arrow__container {
+  /* .title__arrow__container {
     display: flex;
     align-items: baseline;
     width: fit-content;
-  }
+  } */
   .swiper-container {
     width: 100%;
     position: initial;

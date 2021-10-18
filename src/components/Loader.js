@@ -7,7 +7,7 @@ const Loader = () => {
             display: 'flex',
             justifyContent: 'center',
         }}>
-            <img src={LoaderGif} alt='loading' />
+            {/* <img src={LoaderGif} alt='loading' /> */}
         </div>
     )
 }

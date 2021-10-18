@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react'
 import { Switch, Route } from "react-router-dom"
 import { useHistory } from "react-router-dom"
 import { useSelector } from "react-redux";
+import FadeIn from "react-fade-in"
 
 import Home from "./pages/Home"
 import Contact from "./pages/Contact"
@@ -22,7 +23,7 @@ function App() {
   useEffect(() => {
     setTimeout(() => {
       setLoader(false)
-    }, 5000);
+    }, 1000);
   }, [])
 
   
@@ -32,17 +33,18 @@ function App() {
       loader ?
       <Loader />
         :
-      <div className="app">
-        { !isVisible && <TopBar history={history} /> }
-        { !isVisible && <BottomBar history={history} /> }
-        <ScrollToTop>
-          <Switch>
-            <Route exact path="/" component={Home} />
-            <Route exact path="/contact" component={Contact} />
-          </Switch>
-        </ScrollToTop>
-      </div>
-
+        <FadeIn>
+          <div className="app">
+            { !isVisible && <TopBar history={history} /> }
+            { !isVisible && <BottomBar history={history} /> }
+            <ScrollToTop>
+              <Switch>
+                <Route exact path="/" component={Home} />
+                <Route exact path="/contact" component={Contact} />
+              </Switch>
+            </ScrollToTop>
+          </div>
+        </FadeIn>
     }
   </>
   )

@@ -22,14 +22,15 @@
 .card__text__container p {
   margin: 0;
   width: 100%;
+  font-size: 15px;
 }
-.title__arrow__container {
+/* .title__arrow__container {
   cursor: pointer;
 }
 .arrow__home {
   margin-right: 15px;
   min-width: 15px
-}
+} */
 .card__text__container a {
   color: #fe7b7b;
   margin-top: 10px;
