@@ -11,7 +11,7 @@ export const fullScreenSlice = createSlice({
       state.visible = action.payload
     },
     setProject: (state, action) => {
-        state.project = action.payload
+      state.project = action.payload
     }
   },
 });
