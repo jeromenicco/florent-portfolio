@@ -31,9 +31,12 @@ import TFC5 from "./assets/images/TFC/TFC5_ROCKET.mp4"
 import TFC6 from "./assets/images/TFC/TFC6.jpg"
 
 import KONBINI01 from './assets/images/KONBINI/KONBINI01.jpg'
-import KONBINI02 from './assets/images/KONBINI/KONBINI02.mp4'
-import KONBINI03 from './assets/images/KONBINI/KONBINI03.mp4'
-import KONBINI04 from './assets/images/KONBINI/KONBINI04.mp4'
+// import KONBINI02 from './assets/images/KONBINI/KONBINI02.mp4'
+import KONBINI02 from './assets/images/KONBINI/KONBINI02-compressed.mp4'
+// import KONBINI03 from './assets/images/KONBINI/KONBINI03.mp4'
+import KONBINI03 from './assets/images/KONBINI/KONBINI03-compressed.mp4'
+// import KONBINI04 from './assets/images/KONBINI/KONBINI04.mp4'
+import KONBINI04 from './assets/images/KONBINI/KONBINI04-compressed.mp4'
 
 import RICHEMONT from './assets/images/RICHEMONT/RICHEMONT.jpg'
 import RICHEMONT2 from './assets/images/RICHEMONT/RICHEMONT2.jpg'
@@ -67,7 +70,7 @@ export const projectList = [
     resume: "Talk-show en ligne d’ArianeGroup qui parle de l’espace.\nIdentité visuelle, habillage graphique, motion design.",
     link: "Voir l'émission.",
     url: "https://www.facebook.com/watch/live/?v=539265316926153&ref=watch_permalink",
-    img: [TFC2, TFC1, TFC3, TFC4, TFC5, TFC6],
+    img: [TFC1, TFC2, TFC3, TFC4, TFC5, TFC6],
   },
   {
     title: "Konbini x N26",
