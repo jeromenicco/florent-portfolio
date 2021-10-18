@@ -13,7 +13,7 @@ function TickerText() {
   useEffect(() => {
     setTimeout(() => {
       setIsVisible(true)
-    }, 100);
+    }, 500);
     console.log(isVisible)
   },)
   
