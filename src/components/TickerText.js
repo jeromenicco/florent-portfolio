@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from "react"
 import PageVisibility from 'react-page-visibility'
 import Ticker from "react-ticker"
-import { setVisible } from "../redux/slices/fullScreenSlice"
 
 import "./TickerText.css"
 const WebFont = require('webfontloader')
@@ -16,7 +15,7 @@ function TickerText() {
       setIsVisible(true)
     }, 100);
     console.log(isVisible)
-  }, [])
+  },)
   
   WebFont.load({
       google: {
