@@ -31,18 +31,22 @@ import TFC5 from "./assets/images/TFC/TFC5_ROCKET.mp4"
 import TFC6 from "./assets/images/TFC/TFC6.jpg"
 
 import KONBINI01 from './assets/images/KONBINI/KONBINI01.jpg'
-// import KONBINI02 from './assets/images/KONBINI/KONBINI02.mp4'
-import KONBINI02 from './assets/images/KONBINI/KONBINI02-compressed.mp4'
-// import KONBINI03 from './assets/images/KONBINI/KONBINI03.mp4'
-import KONBINI03 from './assets/images/KONBINI/KONBINI03-compressed.mp4'
-// import KONBINI04 from './assets/images/KONBINI/KONBINI04.mp4'
-import KONBINI04 from './assets/images/KONBINI/KONBINI04-compressed.mp4'
+import KONBINI02 from './assets/images/KONBINI/KONBINI02.mp4'
+import KONBINI03 from './assets/images/KONBINI/KONBINI03.mp4'
+import KONBINI04 from './assets/images/KONBINI/KONBINI04.mp4'
+
 
 import RICHEMONT from './assets/images/RICHEMONT/RICHEMONT.jpg'
 import RICHEMONT2 from './assets/images/RICHEMONT/RICHEMONT2.jpg'
 import RICHEMONT3 from './assets/images/RICHEMONT/RICHEMONT3.jpg'
 import RICHEMONT4 from './assets/images/RICHEMONT/RICHEMONT4.jpg'
 import RICHEMONT5 from './assets/images/RICHEMONT/RICHEMONT5.jpg'
+
+import PODCASTS1 from './assets/images/PODCASTS/PODCASTS1.jpg'
+import PODCASTS2 from './assets/images/PODCASTS/PODCASTS2.jpg'
+import PODCASTS3 from './assets/images/PODCASTS/PODCASTS3.jpg'
+import PODCASTS4 from './assets/images/PODCASTS/PODCASTS4.jpg'
+
 
 export const projectList = [
   {
@@ -83,5 +87,10 @@ export const projectList = [
     title: "Richemont",
     resume: "Étude sur le futur du tailoring et du costume.\nDirection artistique, mise en page.",
     img: [RICHEMONT, RICHEMONT2, RICHEMONT3, RICHEMONT4, RICHEMONT5],
+  },
+  {
+    title: "Les Podcasts d'Usbek & Rica",
+    resume: "Identité graphique des 5 émissions.",
+    img: [PODCASTS1, PODCASTS2, PODCASTS3, PODCASTS4],
   },
 ]
