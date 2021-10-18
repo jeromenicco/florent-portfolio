@@ -45,7 +45,6 @@ function ProjectCard({ item }) {
                       className="project__img"
                       autoPlay
                       preload="true"
-                      // controls
                       muted
                       loop
                       playsInline

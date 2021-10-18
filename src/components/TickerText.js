@@ -17,6 +17,7 @@ function TickerText() {
   const handleVisibilityChange = (isVisible) => {
     setPageIsVisible(isVisible)
   }
+  
 
   return (
     <PageVisibility onChange={handleVisibilityChange}>
