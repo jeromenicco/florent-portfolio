@@ -1,20 +1,34 @@
-import React from "react"
+import React, {useState, useEffect} from "react"
 import { useDispatch } from "react-redux"
 import SwiperCore, { Pagination, Navigation} from "swiper"
 import { ImArrowLeft } from "react-icons/im";
 import FadeIn from "react-fade-in"
 import { setVisible } from "../redux/slices/fullScreenSlice"
+// import HorizontalScroll from "react-scroll-horizontal";
 
 function ProjectFull({ fullProject }) {
   SwiperCore.use([Pagination, Navigation])
   const dispatch = useDispatch()
 
+  const [media, setMedia] = useState([])
+
+  const pushMedia = () => {
+    setMedia(fullProject.img)
+  }
+
+  useEffect(() => {
+    pushMedia()
+  },)
+
+  console.log(media)
+
   return (
     <>
       <FadeIn className='full__container'>
+        {/* <HorizontalScroll> */}
           {
-            fullProject.img.map((item, index) => (
-              <div className='horizontal__container' id="MAIN" key={index}>
+            media.map((item, index) => (
+              <div className='horizontal__container' key={index}>
                 {
                   item.includes('.mp4')
                   ?
@@ -34,6 +48,7 @@ function ProjectFull({ fullProject }) {
               </div>
             ))
           }
+        {/* </HorizontalScroll> */}
       </FadeIn>
       <div className='back__arrow__container' onClick={() => dispatch(setVisible(false))}>
         <ImArrowLeft className='arrow'/>

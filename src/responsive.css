@@ -108,7 +108,7 @@
     position: relative;
   }
   .full__project__img {
-    max-height: 100vh;
+    height: 100vh;
   }
   .back__arrow__container {
     width: 250px;
