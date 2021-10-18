@@ -22,7 +22,7 @@
   }
   .card__text__container {
     line-height: 25px;
-    font-size: 16px;
+    font-size: 17px;
   }
   /* .title__arrow__container {
     display: flex;
@@ -87,7 +87,7 @@
     text-align: left;
     width: 100%;
     color: #fe7b7b;
-    font-size: 25px;
+    font-size: 17px;
   }
   .infos__content1 {
     width: 600px;
