@@ -27,24 +27,24 @@ function App() {
   
   return (
     <>
-    {
-      loader ?
-      <Loader />
+      {
+        loader ?
+        <Loader />
         :
-          <div className="app">
-            { !isVisible && <TopBar history={history} /> }
-            { !isVisible && <BottomBar history={history} /> }
-            <ScrollToTop>
-              <Switch>
-                <FadeIn>
-                  <Route exact path="/" component={Home} />
-                  <Route exact path="/contact" component={Contact} />
-                </FadeIn>
-              </Switch>
-            </ScrollToTop>
-          </div>
-    }
-  </>
+        <div className="app">
+          { !isVisible && <TopBar history={history} /> }
+          { !isVisible && <BottomBar history={history} /> }
+          <ScrollToTop>
+            <Switch>
+              <FadeIn>
+                <Route exact path="/" component={Home} />
+                <Route exact path="/contact" component={Contact} />
+              </FadeIn>
+            </Switch>
+          </ScrollToTop>
+        </div>
+      }
+    </>
   )
 }
 

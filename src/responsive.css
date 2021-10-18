@@ -4,7 +4,7 @@
     flex-wrap: wrap;
     justify-content: space-evenly;
     width: 100%;
-    padding-top: 80px;
+    padding-top: 60px;
     padding-bottom: 70px;
   }
   .home__container__full {
@@ -17,12 +17,15 @@
   .card__container {
     width: 48%;
     margin: 0;
-    font-size: 20px;
     padding-bottom: 2%;
   }
   .card__text__container {
     line-height: 25px;
-    font-size: 17px;
+  }
+  .card__text__container p {
+    margin: 0;
+    width: 100%;
+    font-size: 16px;
   }
   /* .title__arrow__container {
     display: flex;
