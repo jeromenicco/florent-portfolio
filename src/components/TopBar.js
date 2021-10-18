@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react"
+import React from "react"
 import TickerText from "./TickerText"
 import Emoji from './Emoji'
 import heartEMOJI from "../assets/gifs/EMOJI_COEUR.gif"
