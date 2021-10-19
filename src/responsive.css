@@ -19,6 +19,9 @@
     margin: 0;
     padding-bottom: 2%;
   }
+  .card__title {
+    cursor: pointer;
+  }
   .card__text__container {
     line-height: 25px;
   }

@@ -15,7 +15,6 @@ function TickerText() {
     setTimeout(() => {
       setIsVisible(true)
     }, 500);
-    console.log(isVisible)
   },)
   
   WebFont.load({

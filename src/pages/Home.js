@@ -23,7 +23,7 @@ function Home() {
           />
         ))
         :
-        <ProjectFull fullProject={fullProject} />
+          <ProjectFull fullProject={fullProject} />
       }
       {
         !isVisible &&

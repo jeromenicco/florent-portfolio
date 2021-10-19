@@ -20,8 +20,6 @@ function ProjectFull({ fullProject }) {
     pushMedia()
   },)
 
-  console.log(media)
-
   return (
     <>
       <FadeIn className='full__container'>

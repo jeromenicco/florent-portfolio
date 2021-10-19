@@ -15,12 +15,12 @@ function ContactInfos() {
         Contactez-moi à l'adresse
         <a className='infos__mail__link' href='mailto:florent.texier@protonmail.com'> florent.texier@protonmail</a> !
       </p>
-      <p className="infos__content3">
+      {/* <p className="infos__content3">
         Références :<br />
         xxxxx xxxxx xxxxx xxxxx xxxxx xxxxx xxxxx xxxxx xxxxx xxxxx xxxxx xxxxx
         xxxxx xxxxx xxxxx xxxxx xxxxx xxxxx xxxxx xxxxx xxxxx xxxxx xxxxx xxxxx
         xxxxx xxxxx xxxxx xxxxx xxxxx xxxxx xxxxx xxxxx xxxxx xxxxx
-      </p>
+      </p> */}
     </FadeIn>
   )
 }

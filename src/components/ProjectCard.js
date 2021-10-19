@@ -65,7 +65,7 @@ function ProjectCard({ item }) {
         <div className="card__text__container">
           <div className='title__arrow__container'>
             {/* { isDesktop && <ImArrowRight className='arrow arrow__home'/>} */}
-            <p className="card__title">{item.title}</p>
+            <p className="card__title" onClick={isDesktop ? handleFullScreen : null}>{item.title}</p>
           </div>
           <div>
             {item.resume.split('\n').map((str, index) => <p key={index}>{str}</p>)}
