@@ -46,6 +46,16 @@ import PODCASTS2 from './assets/images/PODCASTS/PODCASTS2.jpg'
 import PODCASTS3 from './assets/images/PODCASTS/PODCASTS3.jpg'
 import PODCASTS4 from './assets/images/PODCASTS/PODCASTS4.jpg'
 
+import JOSIE1 from './assets/images/JOSIE/JOSIE1.jpg'
+import JOSIE2 from './assets/images/JOSIE/JOSIE2.jpg'
+import JOSIE3 from './assets/images/JOSIE/JOSIE3.jpg'
+import JOSIE4 from './assets/images/JOSIE/JOSIE4.jpg'
+import JOSIE5 from './assets/images/JOSIE/JOSIE5.jpg'
+
+import TRIBAM1 from './assets/images/TRIBAM/TRIBAM1.jpg'
+import TRIBAM2 from './assets/images/TRIBAM/TRIBAM2.jpg'
+import TRIBAM3 from './assets/images/TRIBAM/TRIBAM3.jpg'
+
 
 export const projectList = [
   {
@@ -64,11 +74,6 @@ export const projectList = [
     img: [FIF1, FIF2, FIF3, FIF4, FIF5],
   },
   {
-    title: "L’autre Canal — Nancy",
-    resume: "Programmes trimestriels des concerts de musiques actuelles.\nIdentité visuelle, mise en page, illustration.",
-    img: [LAC1, LAC2, LAC3, LAC4],
-  },
-  {
     title: "The Final Countdown",
     resume: "Talk-show en ligne d’ArianeGroup qui parle de l’espace.\nIdentité visuelle, habillage graphique, motion design.",
     link: "Voir l'émission.",
@@ -76,20 +81,38 @@ export const projectList = [
     img: [TFC1, TFC2, TFC3, TFC4, TFC5, TFC6],
   },
   {
-    title: "Konbini x N26",
-    resume: "Vidéo retraçant l’histoire des néobanques.\nMontage, motion design.",
-    link: "Voir la vidéo.",
-    url: "https://www.facebook.com/konbinifr/videos/512529209883788/?app=fbl",
-    img: [KONBINI01, KONBINI02, KONBINI03, KONBINI04],
+    title: "L’autre Canal — Nancy",
+    resume: "Programmes trimestriels des concerts de musiques actuelles.\nIdentité visuelle, mise en page, illustration.",
+    img: [LAC1, LAC2, LAC3, LAC4],
   },
+  {
+    title: "Les Podcasts d'Usbek & Rica",
+    resume: "Identité graphique des 5 émissions.",
+    img: [PODCASTS1, PODCASTS2, PODCASTS3, PODCASTS4],
+  },
+  {
+    title: "Josie’s Past",
+    resume: "Clip pour le morceau « Josie’s Past » du groupe Xiu Xiu, inspiré du journal secret de Laura Palmer. Réalisation, montage, motion design.",
+    link: "Voir l'émission.",
+    url: " https://www.youtube.com/watch?v=8A4FxKXL5pk&t=205s",
+    img: [JOSIE1, JOSIE2, JOSIE3, JOSIE4, JOSIE5],
+  },
+  {
+    title: "Trinitaires / BAM — Metz",
+    resume: "Programmes communs pour les concerts des 2 salles de musiques actuelles. Direction artistique, typographie, design éditorial (proposition).",
+    img: [TRIBAM1, TRIBAM2, TRIBAM3],
+  },
+  
   {
     title: "Richemont",
     resume: "Étude sur le futur du tailoring et du costume.\nDirection artistique, mise en page.",
     img: [RICHEMONT, RICHEMONT2, RICHEMONT3, RICHEMONT4, RICHEMONT5],
   },
   {
-    title: "Les Podcasts d'Usbek & Rica",
-    resume: "Identité graphique des 5 émissions.",
-    img: [PODCASTS1, PODCASTS2, PODCASTS3, PODCASTS4],
+    title: "Konbini x N26",
+    resume: "Vidéo retraçant l’histoire des néobanques.\nMontage, motion design.",
+    link: "Voir la vidéo.",
+    url: "https://www.facebook.com/konbinifr/videos/512529209883788/?app=fbl",
+    img: [KONBINI01, KONBINI02, KONBINI03, KONBINI04],
   },
 ]

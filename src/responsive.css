@@ -114,21 +114,18 @@
     height: 100vh;
   }
   .back__arrow__container {
-    width: 250px;
     position: absolute;
     color: #fe7b7b;
-    font-size: 25px;
     font-family: "InknutAntiqua-Light";
-    left: 20px;
-    bottom: 0;
+    left: 30px;
+    bottom: 30px;
     cursor: pointer;
     display: flex;
     align-items: center;
     justify-content: space-between;
   }
   .arrow {
-    animation: translateBack 0.4s ease-in reverse infinite;
-    animation-direction: alternate;
+    width: 100px;
   }
   @keyframes translateBack {
     0%   { transform: translate(0%) }

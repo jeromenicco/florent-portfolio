@@ -5,6 +5,7 @@ import { ImArrowLeft } from "react-icons/im";
 import FadeIn from "react-fade-in"
 import { setVisible } from "../redux/slices/fullScreenSlice"
 // import HorizontalScroll from "react-scroll-horizontal";
+import EMOJI_FLECHE from '../assets/gifs/EMOJI_FLECHE.gif'
 
 function ProjectFull({ fullProject }) {
   SwiperCore.use([Pagination, Navigation])
@@ -49,8 +50,7 @@ function ProjectFull({ fullProject }) {
         {/* </HorizontalScroll> */}
       </FadeIn>
       <div className='back__arrow__container' onClick={() => dispatch(setVisible(false))}>
-        <ImArrowLeft className='arrow'/>
-        <p className='back__home'>Back to home</p>
+        <img src={EMOJI_FLECHE} alt='back' className='arrow' />
       </div>
     </>
   )

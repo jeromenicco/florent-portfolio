@@ -14,7 +14,7 @@ function TickerText() {
   useEffect(() => {
     setTimeout(() => {
       setIsVisible(true)
-    }, 500);
+    }, 1000);
   },)
   
   WebFont.load({
@@ -44,7 +44,7 @@ function TickerText() {
                   { styles => (
                       <animated.div style={styles}>
                         <p className='ticker__text'>
-                          Hi! I am Florent, art director, motion designer and visual artist. Salut! Je suis Florent, directeur artistique, motion designer et artiste visuel.
+                          &nbsp;Hi! I am Florent, art director, motion designer and visual artist. Salut ! Je suis Florent, directeur artistique, motion designer et artiste visuel.
                         </p>
                       </animated.div>
                     )}
