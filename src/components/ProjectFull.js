@@ -48,9 +48,11 @@ function ProjectFull({ fullProject }) {
           }
         {/* </HorizontalScroll> */}
       </FadeIn>
-      <div className='back__arrow__container' onClick={() => dispatch(setVisible(false))}>
-        <img src={EMOJI_FLECHE} alt='back' className='arrow' />
-      </div>
+      <FadeIn delay={500}>
+        <div className='back__arrow__container' onClick={() => dispatch(setVisible(false))}>
+          <img src={EMOJI_FLECHE} alt='back' className='arrow' />
+        </div>
+      </FadeIn>
     </>
   )
 }
