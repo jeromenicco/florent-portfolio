@@ -82,3 +82,7 @@
     0 0 10px rgba(254, 254, 0, 0);
 }
 
+.swiper-wrapper {
+  -webkit-tap-highlight-color:rgba(0,0,0,0);
+}
+
