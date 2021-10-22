@@ -1,7 +1,6 @@
 import React, {useState, useEffect} from "react"
 import { useDispatch } from "react-redux"
 import SwiperCore, { Pagination, Navigation} from "swiper"
-import { ImArrowLeft } from "react-icons/im";
 import FadeIn from "react-fade-in"
 import { setVisible } from "../redux/slices/fullScreenSlice"
 // import HorizontalScroll from "react-scroll-horizontal";

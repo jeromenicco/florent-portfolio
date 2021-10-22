@@ -68,7 +68,8 @@ function ProjectCard({ item }) {
             <p className="card__title" onClick={isDesktop ? handleFullScreen : null}>{item.title}</p>
           </div>
           <div>
-            {item.resume.split('\n').map((str, index) => <p key={index}>{str}</p>)}
+            {/* {item.resume.split('\n').map((str, index) => <p key={index}>{str}</p>)} */}
+            <p>{ item.resume && item.resume} <span style={{ fontStyle: "italic"}}>{item.resumeItalic && item.resumeItalic}</span></p>
             {item.link && <a target="_blank" rel="noreferrer" href={item.url}>{item.link}</a>}
           </div>
         </div>
