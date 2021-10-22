@@ -16,13 +16,13 @@
   width: 100%;
   color: #fe7b7b;
   line-height: 20px;
-  margin-top: -36px;
+  margin-top: -34px;
   order: 1;
 }
 .card__text__container p {
   margin: 0;
   width: 100%;
-  font-size: 14px;
+  font-size: 13px;
 }
 /* .title__arrow__container {
   cursor: pointer;

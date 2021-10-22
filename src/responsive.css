@@ -24,6 +24,7 @@
   }
   .card__text__container {
     line-height: 25px;
+    margin-top: -36px;
   }
   .card__text__container p {
     margin: 0;
@@ -71,6 +72,8 @@
   .swiper-pagination-bullet {
     border-radius: 0;
     background-color: #fe7b7b;
+    width: 8px;
+    height: 8px;
     opacity: 1;
   }
   .swiper-pagination-bullet-active {
