@@ -37,7 +37,7 @@
 }
 .card__title {
   /* padding-bottom: 10px; */
-  font-weight: bold !important;
+  font-weight: 600;
   font-size: 18px;
 }
 /* SWIPER -------- */
