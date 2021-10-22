@@ -72,8 +72,8 @@
   border-radius: 0;
   background-color: #fe7b7b;
   opacity: 1;
-  width: 7.5px;
-  height: 7.5px;
+  width: 7px;
+  height: 7px;
 }
 .swiper-pagination-bullet-active {
   background-color: #fefe00;
