@@ -3,8 +3,10 @@ import FadeIn from "react-fade-in"
 import { Swiper, SwiperSlide } from "swiper/react"
 import SwiperCore, { EffectFade, Pagination, Navigation} from "swiper"
 import { useDispatch } from "react-redux";
-import { setVisible, setProject } from "../redux/slices/fullScreenSlice";
+import { setVisible, setProject } from "../redux/slices/fullScreenSlice"
 import { useMediaQuery } from 'react-responsive'
+// import { LazyLoadImage } from 'react-lazy-load-image-component'
+// import 'react-lazy-load-image-component/src/effects/blur.css'
 
 import "swiper/swiper-bundle.css"
 import "./ProjectCard.css"
@@ -41,6 +43,7 @@ function ProjectCard({ item }) {
                     <video
                       className="project__img"
                       autoPlay
+                      muted
                       loop
                       playsInline
                       src={item}
