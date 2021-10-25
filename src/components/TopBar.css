@@ -29,17 +29,3 @@
   width: 80px;
   height: 80px;
 }
-/* .emoji__rotate {
-  font-size: 55px;
-  text-shadow: 0 0 15px#fe7b7b;
-  animation: 4s infinite linear rotation;
-} */
-
-/* @keyframes rotation {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(359deg);
-  }
-} */

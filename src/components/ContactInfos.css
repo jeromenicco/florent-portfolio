@@ -3,16 +3,12 @@
   height: 100%;
   font-size: 14px;
   line-height: 18px;
-  /* margin-left: 20px; */
   font-family: "InknutAntiqua-Light";
   color: #fe7b7b;
   margin-top: 0;
 }
 .infos__mail__link {
   color: #fe7b7b;
-}
-.infos__content1 {
-  /* width: 300px; */
 }
 .dum__space__contact {
   height: 20px;

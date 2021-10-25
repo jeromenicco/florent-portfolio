@@ -24,20 +24,12 @@
   width: 100%;
   font-size: 13px;
 }
-/* .title__arrow__container {
-  cursor: pointer;
-}
-.arrow__home {
-  margin-right: 15px;
-  min-width: 15px
-} */
 .card__text__container a {
   color: #fe7b7b;
   margin-top: 10px;
   font-size: 13px;
 }
 .card__title {
-  /* padding-bottom: 10px; */
   font-weight: 600;
   font-size: 18px;
   letter-spacing: -0.5px;
@@ -55,7 +47,6 @@
 .swiper-slide {
   display: flex;
   width: 100%;
-  /* margin-right: 10px; */
   justify-content: center;
   align-items: center;
 }
@@ -84,9 +75,5 @@
   background-color: #fefe00;
   box-shadow: 0 0 5px #fff, 0 0 20px rgba(254, 254, 0, 0),
     0 0 10px rgba(254, 254, 0, 0);
-}
-
-.swiper-wrapper {
-  -webkit-tap-highlight-color:rgba(0,0,0,0);
 }
 

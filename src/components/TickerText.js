@@ -8,13 +8,12 @@ const WebFont = require('webfontloader')
 
 function TickerText() {
   const [pageIsVisible, setPageIsVisible] = useState(true)
-
   const [isVisible, setIsVisible] = useState(false)
 
   useEffect(() => {
     setTimeout(() => {
       setIsVisible(true)
-    }, 1000);
+    }, 1000)
   },)
   
   WebFont.load({
@@ -49,7 +48,6 @@ function TickerText() {
                       </animated.div>
                     )}
                   </Spring>
-                  
                 </>
               )}
               </Ticker>

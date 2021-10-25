@@ -5,8 +5,6 @@ import SwiperCore, { EffectFade, Pagination, Navigation} from "swiper"
 import { useDispatch } from "react-redux";
 import { setVisible, setProject } from "../redux/slices/fullScreenSlice";
 import { useMediaQuery } from 'react-responsive'
-// import { ImArrowRight } from "react-icons/im";
-// import { LazyLoadComponent, LazyLoadImage } from 'react-lazy-load-image-component';
 
 import "swiper/swiper-bundle.css"
 import "./ProjectCard.css"
@@ -23,7 +21,6 @@ function ProjectCard({ item }) {
   }
 
   return (
-    
     <FadeIn className="card__container">
         <Swiper
           className="swiper__container"
@@ -44,8 +41,6 @@ function ProjectCard({ item }) {
                     <video
                       className="project__img"
                       autoPlay
-                      // preload="true"
-                      muted
                       loop
                       playsInline
                       src={item}
@@ -53,8 +48,6 @@ function ProjectCard({ item }) {
                     />
                     :
                     <div>
-                      {/* <LazyLoadImage className="project__img" src={item} alt={item.title} />
-                      <span value={item[0]} /> */}
                       <img className="project__img" src={item} alt={item.title} />
                     </div>
                   }
@@ -64,13 +57,17 @@ function ProjectCard({ item }) {
         </Swiper>
         <div className="card__text__container">
           <div className='title__arrow__container'>
-            {/* { isDesktop && <ImArrowRight className='arrow arrow__home'/>} */}
             <p className="card__title" onClick={isDesktop ? handleFullScreen : null}>{item.title}</p>
           </div>
           <div>
-            {/* {item.resume.split('\n').map((str, index) => <p key={index}>{str}</p>)} */}
-            <p>{ item.resume && item.resume} <span style={{ fontStyle: "italic"}}>{item.resumeItalic && item.resumeItalic}</span></p>
-            {item.link && <a target="_blank" rel="noreferrer" href={item.url}>{item.link}</a>}
+            <p>
+              { item.resume && item.resume}
+              <span style={{ fontStyle: "italic"}}>{item.resumeItalic && item.resumeItalic}</span>
+            </p>
+            {
+              item.link && 
+              <a target="_blank" rel="noreferrer" href={item.url}>{item.link}</a>
+            }
           </div>
         </div>
       </FadeIn>
