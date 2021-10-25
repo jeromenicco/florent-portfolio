@@ -1,7 +1,7 @@
 import React from "react"
 import FadeIn from "react-fade-in"
 import { Swiper, SwiperSlide } from "swiper/react"
-import SwiperCore, { Pagination, Navigation} from "swiper"
+import SwiperCore, { EffectFade, Pagination, Navigation} from "swiper"
 import { useDispatch } from "react-redux";
 import { setVisible, setProject } from "../redux/slices/fullScreenSlice";
 import { useMediaQuery } from 'react-responsive'
@@ -12,7 +12,7 @@ import "swiper/swiper-bundle.css"
 import "./ProjectCard.css"
 
 function ProjectCard({ item }) {
-  SwiperCore.use([Pagination, Navigation])
+  SwiperCore.use([EffectFade, Pagination, Navigation])
   const dispatch = useDispatch()
 
   const isDesktop = useMediaQuery({ query: '(min-width: 1280px)' })
@@ -28,6 +28,7 @@ function ProjectCard({ item }) {
         <Swiper
           className="swiper__container"
           slidesPerView={1}
+          effect={'fade'}
           spaceBetween={10}
           loop={true}
           pagination
