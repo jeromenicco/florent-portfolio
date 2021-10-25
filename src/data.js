@@ -52,7 +52,7 @@ import JOSIE3 from './assets/images/JOSIE/JOSIE3.jpg'
 import JOSIE4 from './assets/images/JOSIE/JOSIE4.jpg'
 import JOSIE5 from './assets/images/JOSIE/JOSIE5.jpg'
 
-import TRIBAM1 from './assets/images/TRIBAM/TRIBAM1.jpg'
+import TRIBAM from './assets/images/TRIBAM/TRIBAM1.jpg'
 import TRIBAM2 from './assets/images/TRIBAM/TRIBAM2.jpg'
 import TRIBAM3 from './assets/images/TRIBAM/TRIBAM3.jpg'
 
@@ -107,7 +107,7 @@ export const projectList = [
     title: "Trinitaires / BAM — Metz",
     resume: "Programmes communs pour les concerts des 2 salles de musiques actuelles.",
     resumeItalic: "Direction artistique, typographie, design éditorial (proposition).",
-    img: [TRIBAM1, TRIBAM2, TRIBAM3],
+    img: [TRIBAM, TRIBAM2, TRIBAM3],
   },
   
   {

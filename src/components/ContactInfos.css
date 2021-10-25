@@ -3,9 +3,8 @@
   height: 100%;
   font-size: 14px;
   line-height: 18px;
-  margin-left: 20px;
+  /* margin-left: 20px; */
   font-family: "InknutAntiqua-Light";
-  text-align: left;
   color: #fe7b7b;
   margin-top: 0;
 }
@@ -13,8 +12,8 @@
   color: #fe7b7b;
 }
 .infos__content1 {
-  width: 300px;
+  /* width: 300px; */
 }
 .dum__space__contact {
-  height: 30px;
+  height: 20px;
 }

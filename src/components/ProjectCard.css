@@ -70,6 +70,9 @@
   align-self: flex-end;
   z-index: -1;
 }
+.swiper-container-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet {
+  margin: 0 3px;
+}
 .swiper-pagination-bullet {
   border-radius: 0;
   background-color: #fe7b7b;

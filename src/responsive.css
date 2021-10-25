@@ -9,7 +9,7 @@
   }
 }
 
-@media only screen and (min-width: 800px) {
+@media only screen and (min-width: 1280px) {
   .home__container {
     flex-direction: row;
     flex-wrap: wrap;
@@ -34,7 +34,7 @@
     cursor: pointer;
   }
   .card__text__container {
-    line-height: 25px;
+    line-height: 22px;
     margin-top: -36px;
   }
   .card__text__container p {
@@ -103,19 +103,31 @@
   .dum__space__home {
     display: none;
   }
+
+  .contact__container {
+    /* z-index: 1;
+    position: relative;
+    height: 100%;
+    width: 600px;
+    margin-top: 15%;
+    padding-bottom: 20em;
+    display: flex;
+    text-align: center;
+    margin-left: 300px;
+    margin-right: 300px; */
+    margin-top: 15%;
+  }
   .infos__container {
-    width: 100%;
-    line-height: 30px;
+    /* width: 100%;
     margin-left: 20px;
     font-family: "InknutAntiqua-Light";
-    text-align: left;
-    width: 100%;
-    color: #fe7b7b;
+    color: #fe7b7b; */
+    line-height: 22px;
     font-size: 17px;
   }
-  .infos__content1 {
+  /* .infos__content1 {
     width: 600px;
-  }
+  } */
   .full__container {
     display: flex;
     overflow-x: scroll;
