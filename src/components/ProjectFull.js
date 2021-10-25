@@ -33,7 +33,6 @@ function ProjectFull({ fullProject }) {
                   <video
                     className="full__project__img"
                     autoPlay
-                    muted
                     loop
                     preload="auto"
                     playsInline

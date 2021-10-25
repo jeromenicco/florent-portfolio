@@ -99,7 +99,7 @@ export const projectList = [
     title: "Josie’s Past",
     resume: "Clip pour le morceau « Josie’s Past » du groupe Xiu Xiu, inspiré du journal secret de Laura Palmer.",
     resumeItalic: "Réalisation, montage, motion design.",
-    link: "Voir l'émission.",
+    link: "Voir la vidéo.",
     url: " https://www.youtube.com/watch?v=8A4FxKXL5pk&t=205s",
     img: [JOSIE1, JOSIE2, JOSIE3, JOSIE4, JOSIE5],
   },
