@@ -2,6 +2,11 @@
   .bottom__bar__container p {
     font-size: 20px;
   }
+  .card__text__container {
+    
+    margin-top: -33px;
+
+  }
 }
 @media only screen and (min-width: 375px) {
   .bottom__bar__container p {
