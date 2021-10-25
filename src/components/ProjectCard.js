@@ -15,7 +15,7 @@ function ProjectCard({ item }) {
   SwiperCore.use([Pagination, Navigation])
   const dispatch = useDispatch()
 
-  const isDesktop = useMediaQuery({ query: '(min-width: 800px)' })
+  const isDesktop = useMediaQuery({ query: '(min-width: 1280px)' })
 
   const handleFullScreen = () => {
     dispatch(setProject(item))
@@ -33,7 +33,6 @@ function ProjectCard({ item }) {
           pagination
           navigation={isDesktop ? true : false}
           allowTouchMove={isDesktop ? false : true}
-          
         >
           {
             item.img.map((item, index) => (
