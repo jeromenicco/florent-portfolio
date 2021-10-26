@@ -3,7 +3,9 @@ import { useDispatch } from "react-redux"
 import SwiperCore, { Pagination, Navigation} from "swiper"
 import FadeIn from "react-fade-in"
 import { setVisible } from "../redux/slices/fullScreenSlice"
+import HorizontalScroll from 'react-scroll-horizontal'
 import EMOJI_FLECHE from '../assets/gifs/EMOJI_FLECHE.gif'
+import MediaRender from "./MediaRender"
 
 function ProjectFull({ fullProject }) {
   SwiperCore.use([Pagination, Navigation])
@@ -21,7 +23,7 @@ function ProjectFull({ fullProject }) {
 
   return (
     <>
-      <FadeIn className='full__container'>
+      {/* <FadeIn className='full__container'>
           {
             media.map((item, index) => (
               <div className='horizontal__container' key={index}>
@@ -43,7 +45,10 @@ function ProjectFull({ fullProject }) {
               </div>
             ))
           }
-      </FadeIn>
+      </FadeIn> */}
+      {/* <HorizontalScroll> */}
+        <MediaRender media={media} />
+      {/* </HorizontalScroll> */}
       <FadeIn delay={500}>
         <div className='back__arrow__container' onClick={() => dispatch(setVisible(false))}>
           <img src={EMOJI_FLECHE} alt='back' className='arrow' />
