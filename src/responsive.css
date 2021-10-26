@@ -33,7 +33,7 @@
     justify-content: space-evenly;
     width: 100%;
     position: fixed;
-  }  
+  }
   .card__container {
     width: 48%;
     margin: 0;
@@ -116,9 +116,13 @@
     line-height: 22px;
     font-size: 17px;
   }
+  .full__wrapper {
+    height: 100vh;
+  }
   .full__container {
     display: flex;
     overflow-x: scroll;
+    height: 100vh;
   }
   .full__container::-webkit-scrollbar {
     display: none;

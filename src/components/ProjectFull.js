@@ -7,6 +7,8 @@ import HorizontalScroll from 'react-scroll-horizontal'
 import EMOJI_FLECHE from '../assets/gifs/EMOJI_FLECHE.gif'
 import MediaRender from "./MediaRender"
 
+import HorizontalScroll from "react-scroll-horizontal"
+
 function ProjectFull({ fullProject }) {
   SwiperCore.use([Pagination, Navigation])
   const dispatch = useDispatch()
@@ -22,8 +24,8 @@ function ProjectFull({ fullProject }) {
   },)
 
   return (
-    <>
-      {/* <FadeIn className='full__container'>
+    <div className="full__wrapper">
+      <HorizontalScroll reverseScroll={true} className='full__container'>
           {
             media.map((item, index) => (
               <div className='horizontal__container' key={index}>
@@ -45,16 +47,13 @@ function ProjectFull({ fullProject }) {
               </div>
             ))
           }
-      </FadeIn> */}
-      {/* <HorizontalScroll> */}
-        <MediaRender media={media} />
-      {/* </HorizontalScroll> */}
+      </HorizontalScroll>
       <FadeIn delay={500}>
         <div className='back__arrow__container' onClick={() => dispatch(setVisible(false))}>
           <img src={EMOJI_FLECHE} alt='back' className='arrow' />
         </div>
       </FadeIn>
-    </>
+    </div>
   )
 }
 
