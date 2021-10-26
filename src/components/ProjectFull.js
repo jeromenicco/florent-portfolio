@@ -5,9 +5,7 @@ import FadeIn from "react-fade-in"
 import { setVisible } from "../redux/slices/fullScreenSlice"
 import HorizontalScroll from 'react-scroll-horizontal'
 import EMOJI_FLECHE from '../assets/gifs/EMOJI_FLECHE.gif'
-import MediaRender from "./MediaRender"
-
-import HorizontalScroll from "react-scroll-horizontal"
+// import MediaRender from "./MediaRender"
 
 function ProjectFull({ fullProject }) {
   SwiperCore.use([Pagination, Navigation])
