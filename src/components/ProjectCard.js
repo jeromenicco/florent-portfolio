@@ -42,8 +42,8 @@ function ProjectCard({ item }) {
                     ?
                     <video
                       className="project__img"
-                      // autoPlay
-                      controls
+                      autoPlay
+                      // controls
                       muted
                       loop
                       playsInline
