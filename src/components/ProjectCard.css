@@ -3,6 +3,11 @@
   src: local("InknutAntiqua-Light"),
     url("../assets/fonts/InknutAntiqua-Light.ttf") format("woff");
 }
+@font-face {
+  font-family: "InknutAntiqua-Bold";
+  src: local("InknutAntiqua-Bold"),
+    url("../assets/fonts/InknutAntiqua-Bold.ttf") format("woff");
+}
 .card__container {
   position: relative;
   margin-right: 5%;
@@ -30,7 +35,7 @@
   font-size: 13px;
 }
 .card__title {
-  font-weight: 600;
+  font-family: "InknutAntiqua-Bold";
   font-size: 18px;
   letter-spacing: -0.5px;
 }
