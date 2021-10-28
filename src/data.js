@@ -23,17 +23,17 @@ import LAC2 from "./assets/images/LAC/LAC2.jpg"
 import LAC3 from "./assets/images/LAC/LAC3.jpg"
 import LAC4 from "./assets/images/LAC/LAC4.jpg"
 
-import TFC1 from "./assets/images/TFC/TFC1_GENERIQUE.mp4"
+import TFC1 from "./assets/images/TFC/TFC1_GENERIQUE_1.mp4"
 import TFC2 from "./assets/images/TFC/TFC2.jpg"
-import TFC3 from "./assets/images/TFC/TFC3_BIRTH.mp4"
+import TFC3 from "./assets/images/TFC/TFC3_BIRTH_1.mp4"
 import TFC4 from "./assets/images/TFC/TFC4.jpg"
-import TFC5 from "./assets/images/TFC/TFC5_ROCKET.mp4"
+import TFC5 from "./assets/images/TFC/TFC5_ROCKET_1.mp4"
 import TFC6 from "./assets/images/TFC/TFC6.jpg"
 
 import KONBINI01 from './assets/images/KONBINI/KONBINI01.jpg'
-import KONBINI02 from './assets/images/KONBINI/KONBINI02.mp4'
-import KONBINI03 from './assets/images/KONBINI/KONBINI03.mp4'
-import KONBINI04 from './assets/images/KONBINI/KONBINI04.mp4'
+import KONBINI02 from './assets/images/KONBINI/KONBINI02_1.mp4'
+import KONBINI03 from './assets/images/KONBINI/KONBINI03_1.mp4'
+import KONBINI04 from './assets/images/KONBINI/KONBINI04_1.mp4'
 
 import RICHEMONT from './assets/images/RICHEMONT/RICHEMONT.jpg'
 import RICHEMONT2 from './assets/images/RICHEMONT/RICHEMONT2.jpg'
