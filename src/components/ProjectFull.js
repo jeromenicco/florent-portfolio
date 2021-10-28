@@ -18,7 +18,7 @@ function ProjectFull({ fullProject }) {
     if (event.keyCode === 27) {
       dispatch(setVisible(false))
     }
-  }, [])
+  }, [dispatch])
   
   useEffect(() => {
     document.addEventListener("keydown", escFunction)
@@ -28,11 +28,11 @@ function ProjectFull({ fullProject }) {
     };
   }, [escFunction])
 
-  const pushMedia = () => {
-    setMedia(fullProject.img)
-  }
-
+  
   useEffect(() => {
+    const pushMedia = () => {
+      setMedia(fullProject.img)
+    }
     pushMedia()
   },)
 
