@@ -1,17 +1,32 @@
-import React, {useState, useEffect} from "react"
+import React, {useCallback, useState, useEffect} from "react"
 import { useDispatch } from "react-redux"
 import SwiperCore, { Pagination, Navigation} from "swiper"
 import FadeIn from "react-fade-in"
 import { setVisible } from "../redux/slices/fullScreenSlice"
 import HorizontalScroll from 'react-scroll-horizontal'
 import EMOJI_FLECHE from '../assets/gifs/EMOJI_FLECHE.gif'
-// import MediaRender from "./MediaRender"
+import MediaRender from "./MediaRender"
+
 
 function ProjectFull({ fullProject }) {
   SwiperCore.use([Pagination, Navigation])
   const dispatch = useDispatch()
-
+  
   const [media, setMedia] = useState([])
+  
+  const escFunction = useCallback((event) => {
+    if (event.keyCode === 27) {
+      dispatch(setVisible(false))
+    }
+  }, [])
+  
+  useEffect(() => {
+    document.addEventListener("keydown", escFunction)
+  
+    return () => {
+      document.removeEventListener("keydown", escFunction);
+    };
+  }, [escFunction])
 
   const pushMedia = () => {
     setMedia(fullProject.img)
@@ -23,31 +38,9 @@ function ProjectFull({ fullProject }) {
 
   return (
     <div className="full__wrapper">
-      {/* <FadeIn> */}
       <HorizontalScroll reverseScroll={true} className='full__container'>
-          {
-            media.map((item, index) => (
-              <div className='horizontal__container' key={index}>
-                {
-                  item.includes('.mp4')
-                  ?
-                  <video
-                    className="full__project__img"
-                    autoPlay
-                    loop
-                    preload="auto"
-                    playsInline
-                    src={item}
-                    alt={item.title}
-                  />
-                  :
-                  <img className="full__project__img" src={item} alt={item.title} />
-                }
-              </div>
-            ))
-          }
+          <MediaRender media={media} />
       </HorizontalScroll>
-      {/* </FadeIn> */}
       <FadeIn delay={500}>
         <div className='back__arrow__container' onClick={() => dispatch(setVisible(false))}>
           <img src={EMOJI_FLECHE} alt='back' className='arrow' />
