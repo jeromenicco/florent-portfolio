@@ -23,7 +23,7 @@ function ProjectFull({ fullProject }) {
 
   return (
     <div className="full__wrapper">
-      <FadeIn>
+      {/* <FadeIn> */}
       <HorizontalScroll reverseScroll={true} className='full__container'>
           {
             media.map((item, index) => (
@@ -47,7 +47,7 @@ function ProjectFull({ fullProject }) {
             ))
           }
       </HorizontalScroll>
-      </FadeIn>
+      {/* </FadeIn> */}
       <FadeIn delay={500}>
         <div className='back__arrow__container' onClick={() => dispatch(setVisible(false))}>
           <img src={EMOJI_FLECHE} alt='back' className='arrow' />
