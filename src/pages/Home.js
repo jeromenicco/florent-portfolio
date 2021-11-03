@@ -1,6 +1,6 @@
 
 import React from "react"
-import { useSelector } from "react-redux";
+import { useSelector } from "react-redux"
 import ProjectCard from "../components/ProjectCard"
 import ProjectFull from '../components/ProjectFull'
 import { projectList } from "../data"

@@ -2,11 +2,9 @@ import React from "react"
 import FadeIn from "react-fade-in"
 import { Swiper, SwiperSlide } from "swiper/react"
 import SwiperCore, { EffectFade, Pagination, Navigation} from "swiper"
-import { useDispatch } from "react-redux";
+import { useDispatch } from "react-redux"
 import { setVisible, setProject } from "../redux/slices/fullScreenSlice"
-import { useMediaQuery } from 'react-responsive'
-// import { LazyLoadImage } from 'react-lazy-load-image-component'
-// import 'react-lazy-load-image-component/src/effects/blur.css'
+import { useMediaQuery } from "react-responsive"
 
 import "swiper/swiper-bundle.css"
 import "./ProjectCard.css"
@@ -15,7 +13,7 @@ function ProjectCard({ item }) {
   SwiperCore.use([EffectFade, Pagination, Navigation])
   const dispatch = useDispatch()
 
-  const isDesktop = useMediaQuery({ query: '(min-width: 1280px)' })
+  const isDesktop = useMediaQuery({ query: "(min-width: 1280px)" })
 
   const handleFullScreen = () => {
     dispatch(setProject(item))
@@ -38,7 +36,7 @@ function ProjectCard({ item }) {
             item.img.map((item, index) => (
               <SwiperSlide key={index} onClick={isDesktop ? handleFullScreen : null}>
                   {
-                    item.includes('.mp4')
+                    item.includes(".mp4")
                     ?
                     <video
                       className="project__img"
@@ -62,7 +60,7 @@ function ProjectCard({ item }) {
           }
         </Swiper>
         <div className="card__text__container">
-          <div className='title__arrow__container'>
+          <div className="title__arrow__container">
             <p className="card__title" onClick={isDesktop ? handleFullScreen : null}>{item.title}</p>
           </div>
           <div>

@@ -1,14 +1,14 @@
 import React from "react"
 import FadeIn from "react-fade-in"
 
-const MediaRender = ({media}) => {
+const MediaRender = ({ media }) => {
     return(
-        <FadeIn className='full__container'>
+        <FadeIn className="full__container">
           {
             media.map((item, index) => (
-              <div className='horizontal__container' key={index}>
+              <div className="horizontal__container" key={index}>
                 {
-                  item.includes('.mp4')
+                  item.includes(".mp4")
                   ?
                   <video
                     className="full__project__img"

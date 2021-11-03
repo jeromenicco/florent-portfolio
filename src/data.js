@@ -30,31 +30,31 @@ import TFC4 from "./assets/images/TFC/TFC4.jpg"
 import TFC5 from "./assets/images/TFC/TFC5_ROCKET_1.mp4"
 import TFC6 from "./assets/images/TFC/TFC6.jpg"
 
-import KONBINI01 from './assets/images/KONBINI/KONBINI01.jpg'
-import KONBINI02 from './assets/images/KONBINI/KONBINI02_1.mp4'
-import KONBINI03 from './assets/images/KONBINI/KONBINI03_1.mp4'
-import KONBINI04 from './assets/images/KONBINI/KONBINI04_1.mp4'
+import KONBINI01 from "./assets/images/KONBINI/KONBINI01.jpg"
+import KONBINI02 from "./assets/images/KONBINI/KONBINI02_1.mp4"
+import KONBINI03 from "./assets/images/KONBINI/KONBINI03_1.mp4"
+import KONBINI04 from "./assets/images/KONBINI/KONBINI04_1.mp4"
 
-import RICHEMONT from './assets/images/RICHEMONT/RICHEMONT.jpg'
-import RICHEMONT2 from './assets/images/RICHEMONT/RICHEMONT2.jpg'
-import RICHEMONT3 from './assets/images/RICHEMONT/RICHEMONT3.jpg'
-import RICHEMONT4 from './assets/images/RICHEMONT/RICHEMONT4.jpg'
-import RICHEMONT5 from './assets/images/RICHEMONT/RICHEMONT5.jpg'
+import RICHEMONT from "./assets/images/RICHEMONT/RICHEMONT.jpg"
+import RICHEMONT2 from "./assets/images/RICHEMONT/RICHEMONT2.jpg"
+import RICHEMONT3 from "./assets/images/RICHEMONT/RICHEMONT3.jpg"
+import RICHEMONT4 from "./assets/images/RICHEMONT/RICHEMONT4.jpg"
+import RICHEMONT5 from "./assets/images/RICHEMONT/RICHEMONT5.jpg"
 
-import PODCASTS1 from './assets/images/PODCASTS/PODCASTS1.jpg'
-import PODCASTS2 from './assets/images/PODCASTS/PODCASTS2.jpg'
-import PODCASTS3 from './assets/images/PODCASTS/PODCASTS3.jpg'
-import PODCASTS4 from './assets/images/PODCASTS/PODCASTS4.jpg'
+import PODCASTS1 from "./assets/images/PODCASTS/PODCASTS1.jpg"
+import PODCASTS2 from "./assets/images/PODCASTS/PODCASTS2.jpg"
+import PODCASTS3 from "./assets/images/PODCASTS/PODCASTS3.jpg"
+import PODCASTS4 from "./assets/images/PODCASTS/PODCASTS4.jpg"
 
-import JOSIE1 from './assets/images/JOSIE/JOSIE1.jpg'
-import JOSIE2 from './assets/images/JOSIE/JOSIE2.jpg'
-import JOSIE3 from './assets/images/JOSIE/JOSIE3.jpg'
-import JOSIE4 from './assets/images/JOSIE/JOSIE4.jpg'
-import JOSIE5 from './assets/images/JOSIE/JOSIE5.jpg'
+import JOSIE1 from "./assets/images/JOSIE/JOSIE1.jpg"
+import JOSIE2 from "./assets/images/JOSIE/JOSIE2.jpg"
+import JOSIE3 from "./assets/images/JOSIE/JOSIE3.jpg"
+import JOSIE4 from "./assets/images/JOSIE/JOSIE4.jpg"
+import JOSIE5 from "./assets/images/JOSIE/JOSIE5.jpg"
 
-import TRIBAM from './assets/images/TRIBAM/TRIBAM1.jpg'
-import TRIBAM2 from './assets/images/TRIBAM/TRIBAM2.jpg'
-import TRIBAM3 from './assets/images/TRIBAM/TRIBAM3.jpg'
+import TRIBAM from "./assets/images/TRIBAM/TRIBAM1.jpg"
+import TRIBAM2 from "./assets/images/TRIBAM/TRIBAM2.jpg"
+import TRIBAM3 from "./assets/images/TRIBAM/TRIBAM3.jpg"
 
 
 export const projectList = [
@@ -100,7 +100,7 @@ export const projectList = [
     resume: "Clip pour le morceau « Josie’s Past » du groupe Xiu Xiu, inspiré du journal secret de Laura Palmer.",
     resumeItalic: "Réalisation, montage, motion design.",
     link: "Voir la vidéo.",
-    url: " https://www.youtube.com/watch?v=8A4FxKXL5pk&t=205s",
+    url: "https://www.youtube.com/watch?v=8A4FxKXL5pk&t=205s",
     img: [JOSIE1, JOSIE2, JOSIE3, JOSIE4, JOSIE5],
   },
   {
