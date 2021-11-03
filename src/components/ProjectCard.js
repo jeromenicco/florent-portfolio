@@ -47,9 +47,11 @@ function ProjectCard({ item }) {
                       muted
                       loop
                       playsInline
-                      src={item}
+                      // src={item}
                       alt={item.title}
-                    />
+                    >
+                      <source src={item} type="video/mp4" />
+                    </video>
                     :
                     <div>
                       <img className="project__img" src={item} alt={item.title} />
