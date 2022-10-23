@@ -1,7 +1,7 @@
 import React from 'react'
 import { Switch, Route } from "react-router-dom"
 import { useHistory } from "react-router-dom"
-import { useSelector } from "react-redux";
+import { useSelector } from "react-redux"
 import FadeIn from "react-fade-in"
 import Home from "./pages/Home"
 import Contact from "./pages/Contact"

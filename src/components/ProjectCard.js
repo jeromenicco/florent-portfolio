@@ -41,11 +41,9 @@ function ProjectCard({ item }) {
                     <video
                       className="project__img"
                       autoPlay
-                      // controls
                       muted
                       loop
                       playsInline
-                      // src={item}
                       alt={item.title}
                     >
                       <source src={item} type="video/mp4" />
