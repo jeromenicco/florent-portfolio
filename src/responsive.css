@@ -19,6 +19,7 @@
 }
 
 @media only screen and (min-width: 1280px) {
+
   .home__container {
     flex-direction: row;
     flex-wrap: wrap;
@@ -35,7 +36,8 @@
     position: fixed;
   }
   .card__container {
-    width: 48%;
+    width: calc(50vw - 40px);
+    height: auto;
     margin: 0;
     padding-bottom: 2%;
   }
