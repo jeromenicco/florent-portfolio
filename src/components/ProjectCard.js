@@ -24,6 +24,26 @@ function ProjectCard({ item }) {
     dispatch(setVisible(true))
   }
 
+  
+  var player;
+  function onYouTubeIframeAPIReady() {
+    player = new YT.Player('player', {
+      width: '100%',
+      videoId: item.img,
+      playerVars: { 'autoplay': 1, 'playsinline': 1 },
+      events: {
+        'onReady': onPlayerReady
+      }
+    });
+  }
+
+  // 4. The API will call this function when the video player is ready.
+  function onPlayerReady(event) {
+     event.target.mute();
+    event.target.playVideo();
+  }
+
+
 
  
 
@@ -58,7 +78,7 @@ function ProjectCard({ item }) {
                   key={index}
                   className="iframe"
                   title={item}
-                  src={`http://www.youtube.com/embed/${item}?autoplay=1&mute=1&loop=1&playlist=${item}`}
+                  src={`http://www.youtube.com/embed/${item}?playsinline=1&autoplay=1&mute=1&loop=1&playlist=${item}`}
                   frameBorder='0'
                   allow='autoplay; encrypted-media'
                   allowFullScreen
