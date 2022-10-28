@@ -24,28 +24,7 @@ function ProjectCard({ item }) {
     dispatch(setVisible(true))
   }
 
-  
-  var player;
-  function onYouTubeIframeAPIReady() {
-    player = new YT.Player('player', {
-      width: '100%',
-      videoId: item.img,
-      playerVars: { 'autoplay': 1, 'playsinline': 1 },
-      events: {
-        'onReady': onPlayerReady
-      }
-    });
-  }
 
-  // 4. The API will call this function when the video player is ready.
-  function onPlayerReady(event) {
-     event.target.mute();
-    event.target.playVideo();
-  }
-
-
-
- 
 
   return (
     <FadeIn className="card__container">
