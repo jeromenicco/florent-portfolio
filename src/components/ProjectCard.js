@@ -1,4 +1,4 @@
-import React, { useEffect } from "react"
+import React from "react"
 import FadeIn from "react-fade-in"
 import { Swiper, SwiperSlide } from "swiper/react"
 import SwiperCore, { EffectFade, Pagination, Navigation } from "swiper"
@@ -6,7 +6,7 @@ import { useDispatch } from "react-redux"
 import { setVisible, setProject } from "../redux/slices/fullScreenSlice"
 import { useMediaQuery } from "react-responsive"
 
-import ReactPlayer from 'react-player'
+// import ReactPlayer from 'react-player'
 
 
 import "swiper/swiper-bundle.css"
