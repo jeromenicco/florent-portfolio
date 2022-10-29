@@ -44,6 +44,7 @@ function ProjectCard({ item }) {
               ?
               <div
                 className='iframe__wrapper'
+                key={index}
                 style={{
                   position: "relative",
                   paddingBottom: "56.25%" /* 16:9 */,
@@ -54,7 +55,6 @@ function ProjectCard({ item }) {
               >
                 <iframe
                   id='i_frame'
-                  key={index}
                   className="iframe"
                   title={item}
                   src={`http://www.youtube.com/embed/${item}?mute=1&playsinline=1&autoplay=1&loop=1&playlist=${item}`}
