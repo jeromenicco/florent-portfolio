@@ -57,7 +57,7 @@ function ProjectCard({ item }) {
                   key={index}
                   className="iframe"
                   title={item}
-                  src={`http://www.youtube.com/embed/${item}?playsinline=1&autoplay=1&mute=1&loop=1&playlist=${item}`}
+                  src={`http://www.youtube.com/embed/${item}?mute=1&playsinline=1&autoplay=1&loop=1&playlist=${item}`}
                   frameBorder='0'
                   allow='autoplay; encrypted-media'
                   allowFullScreen
