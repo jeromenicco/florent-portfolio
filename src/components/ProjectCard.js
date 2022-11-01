@@ -24,20 +24,7 @@ function ProjectCard({ item }) {
     dispatch(setVisible(true))
   }
 
-  // const navLeft = document.querySelector('.left__nav')
-  // const navRight = document.querySelector('.right__nav')
 
-  // console.log(navLeft, navRight)
-
-  // navLeft.addEventListener('click', (e) => {
-  //   e.preventDefault
-  //   Swiper.swipePrev()
-  // })
-
-  // navRight.addEventListener('click', (e) => {
-  //   e.preventDefault
-  //   Swiper.swipeNext()
-  // })
 
   return (
     <FadeIn className='card__container'>
@@ -48,7 +35,7 @@ function ProjectCard({ item }) {
         spaceBetween={10}
         loop={true}
         pagination
-        navigation={item.img.length > 1 && true }
+        navigation={item.img.length > 1 && isDesktop ? true : false}
         allowTouchMove={isDesktop ? false : true}
       >
         {
@@ -87,16 +74,16 @@ function ProjectCard({ item }) {
                 />
               </div>
               :
-              <SwiperSlide key={item} onClick={isDesktop ? handleFullScreen : null}>
+              <SwiperSlide key={index} onClick={isDesktop ? handleFullScreen : null}>
                 {
-                  // !isDesktop
-                  // ?
-                  // <div className='slide__navigation__wrapper'>
-                  //   <div className='left__nav'></div>
-                  //   <div className='right__nav'></div>
-                  //   <img className='project__img' src={item} alt={item.title} />
-                  // </div>
-                  // :
+                  !isDesktop
+                  ?
+                  <div className='slide__navigation__wrapper'>
+                    <div className='left__nav'></div>
+                    <div className='right__nav'></div>
+                    <img className='project__img' src={item} alt={item.title} />
+                  </div>
+                  :
                   <img className='project__img' src={item} alt={item.title} />
                 }
               </SwiperSlide>
