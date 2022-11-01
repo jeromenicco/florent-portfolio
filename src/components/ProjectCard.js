@@ -6,9 +6,6 @@ import { useDispatch } from 'react-redux'
 import { setVisible, setProject } from '../redux/slices/fullScreenSlice'
 import { useMediaQuery } from 'react-responsive'
 
-// import ReactPlayer from 'react-player'
-
-
 import 'swiper/swiper-bundle.css'
 import './ProjectCard.css'
 
@@ -18,13 +15,10 @@ function ProjectCard({ item }) {
 
   const isDesktop = useMediaQuery({ query: '(min-width: 1280px)' })
 
-
   const handleFullScreen = () => {
     dispatch(setProject(item))
     dispatch(setVisible(true))
   }
-
-
 
   return (
     <FadeIn className='card__container'>
@@ -58,7 +52,7 @@ function ProjectCard({ item }) {
                 <iframe
                   className='iframe'
                   title={item}
-                  src={`http://www.youtube.com/embed/${item}?mute=1&playsinline=1&autoplay=1&loop=1&playlist=${item}`}
+                  src={`http://www.youtube.com/embed/${item}?mute=1&autoplay=1&loop=1&playlist=${item}`}
                   frameBorder='0'
                   allow='autoplay; encrypted-media'
                   allowFullScreen
@@ -90,13 +84,9 @@ function ProjectCard({ item }) {
           ))
         }
       </Swiper>
-      <div
-        className='card__text__container'
-      >
-        {/* <div className='title__arrow__container'>
+      <div className='card__text__container'>
           <p className='card__title' onClick={isDesktop ? handleFullScreen : null}>{item.title}</p>
-        </div> */}
-          <p><span className='card__title' onClick={isDesktop ? handleFullScreen : null}>{item.title} </span><span style={{ fontStyle: 'italic' }}>{item.resumeItalic && item.resumeItalic}</span> {item.resume && item.resume}</p>
+          <p>{item.resume && item.resume}</p>
           {item.link && <a target='_blank' rel='noreferrer' href={item.url}>{item.link}</a>}
       </div>
     </FadeIn>

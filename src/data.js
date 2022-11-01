@@ -71,21 +71,18 @@ export const projectList = [
   {
     title: "Champ Magnétique",
     resume: "Premier numéro des Cahiers de La Maison Forte, un tiers-lieu en Lot-et-Garonne dédié aux cultures de la transition.",
-    resumeItalic: "~ Direction artistique, édition ~",
     link: "",
     img: [CM1, CM2, CM3, CM4, CM5],
   },
   {
     title: "Veuillez libérer de l’espace de stockage",
     resume: "Micro-édition nocturne, érotique et poétique qui plonge dans l’intimité des images stockées sur nos smartphones.",
-    resumeItalic: "~ Illustration, édition ~",
     link: "",
     img: [VEUILLEZ1, VEUILLEZ2, VEUILLEZ3, VEUILLEZ4],
   },
   {
     title: "Interview • Stand-up",
     resume: "Deux formats vidéos de L’ADN, destinés aux réseaux sociaux.",
-    resumeItalic: "~ Identité visuelle, motion design ~",
     link: "L’ADN sur Instagram.",
     url: "https://www.instagram.com/ladneu/reels/",
     img: ['Zb7fvCTFf6A'],
@@ -93,7 +90,6 @@ export const projectList = [
   {
     title: "L’actu en bref • Idée forte",
     resume: "Deux formats vidéos de L’ADN, destinés aux réseaux sociaux.",
-    resumeItalic: "~ Identité visuelle, motion design ~",
     link: "L’ADN sur Instagram.",
     url: "https://www.instagram.com/ladneu/reels/",
     img: ['7xgFWtjtKCQ'],
@@ -101,25 +97,21 @@ export const projectList = [
   {
     title: "Usbek & Rica magazine",
     resume: "Le magazine qui explore le futur. Publication trimestrielle.",
-    resumeItalic: "~ Direction artistique, édition ~",
     img: [UR1, UR2, UR3, UR4, UR5, UR6, UR7],
   },
   {
     title: "DATADRAMA",
     resume: "16 pages micro-éditées rassemblant des images et textes de science-fiction technologique et pornographiques.",
-    resumeItalic: "~ Peinture digitale, édition expérimentale ~",
     img: [DD1, DD2, DD3, DD4],
   },
   {
     title: "F.I.F.85",
     resume: "Proposition d’identité pour le festival yonnais dédié au cinéma international.",
-    resumeItalic: "~ Identité visuelle, typographie ~",
     img: [FIF1, FIF2, FIF3, FIF4, FIF5],
   },
   {
     title: "The Final Countdown",
     resume: "Talk-show d’ArianeGroup au sujet de l’actualité spatiale.",
-    resumeItalic: "~ Identité visuelle, habillage graphique, motion design ~",
     link: "Voir l'émission.",
     url: "https://www.facebook.com/watch/live/?v=539265316926153&ref=watch_permalink",
     img: [
@@ -135,19 +127,16 @@ export const projectList = [
   {
     title: "L’autre Canal",
     resume: "Programmes trimestriels des concerts de la salle nancéienne de musiques actuelles.",
-    resumeItalic: "~ Direction artistique, édition, illustration ~",
     img: [LAC1, LAC2, LAC3, LAC4],
   },
   {
     title: "Podcasts",
     resume: "5 émissions sur le futur par Usbek & Rica.",
-    resumeItalic: "~ Identité visuelle ~",
     img: [PODCASTS1, PODCASTS2, PODCASTS3, PODCASTS4],
   },
   {
     title: "Josie’s Past",
     resume: "Vidéo musicale pour le morceau « Josie’s Past » du groupe Xiu Xiu, inspiré du journal secret de Laura Palmer.",
-    resumeItalic: "~ Réalisation, montage, motion design ~",
     link: "Voir la vidéo.",
     url: "https://www.youtube.com/watch?v=8A4FxKXL5pk&t=205s",
     img: [JOSIE1, JOSIE2, JOSIE3, JOSIE4, JOSIE5],
@@ -155,20 +144,17 @@ export const projectList = [
   {
     title: "Trinitaires / BAM",
     resume: "Programmes communs (propositions) pour les concerts des 2 salles de musiques actuelles de Metz.",
-    resumeItalic: "~ Identité visuelle, typographie, édition ~",
     img: [TRIBAM, TRIBAM2, TRIBAM3],
   },
   
   {
     title: "Le costume a son avenir derrière lui",
     resume: "Étude sur le futur du tailoring et du costume, pour Richemont.",
-    resumeItalic: "~ Direction artistique, édition ~",
     img: [RICHEMONT, RICHEMONT2, RICHEMONT3, RICHEMONT4, RICHEMONT5],
   },
   {
     title: "Les néobanques",
     resume: "Vidéo explicative (explainer) retraçant l’histoire des néobanques, pour Konbini x N26.",
-    resumeItalic: "~ Montage, motion design ~",
     link: "Voir la vidéo.",
     url: "https://www.facebook.com/konbinifr/videos/512529209883788/?app=fbl",
     img: [
