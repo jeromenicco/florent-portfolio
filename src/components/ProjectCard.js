@@ -29,7 +29,10 @@ function ProjectCard({ item }) {
         spaceBetween={10}
         loop={true}
         pagination
-        navigation={item.img.length > 1 && isDesktop ? true : false}
+        navigation={item.img.length > 1 && isDesktop ? true : {
+          prevEl: '.left__nav',
+          nextEl: '.right__nav',
+        }}
         allowTouchMove={isDesktop ? false : true}
       >
         {
@@ -67,23 +70,23 @@ function ProjectCard({ item }) {
               <SwiperSlide key={index} onClick={isDesktop ? handleFullScreen : null}>
                 {
                   !isDesktop
-                  ?
-                  <div className='slide__navigation__wrapper'>
-                    <div className='left__nav'></div>
-                    <div className='right__nav'></div>
+                    ?
+                    <div className='slide__navigation__wrapper'>
+                      <div className='left__nav'></div>
+                      <div className='right__nav'></div>
+                      <img className='project__img' src={item} alt={item.title} />
+                    </div>
+                    :
                     <img className='project__img' src={item} alt={item.title} />
-                  </div>
-                  :
-                  <img className='project__img' src={item} alt={item.title} />
                 }
               </SwiperSlide>
           ))
         }
       </Swiper>
       <div className='card__text__container'>
-          <p className='card__title' onClick={isDesktop ? handleFullScreen : null}>{item.title}</p>
-          <p>{item.resume && item.resume}</p>
-          {item.link && <a target='_blank' rel='noreferrer' href={item.url}>{item.link}</a>}
+        <p className='card__title' onClick={isDesktop ? handleFullScreen : null}>{item.title}</p>
+        <p>{item.resume && item.resume}</p>
+        {item.link && <a target='_blank' rel='noreferrer' href={item.url}>{item.link}</a>}
       </div>
     </FadeIn>
   )

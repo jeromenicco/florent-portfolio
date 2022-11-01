@@ -84,21 +84,21 @@
     0 0 10px rgba(254, 254, 0, 0);
 }
 
-/* .swiper-button-next {
-  right: 0;
+.slide__navigation__wrapper {
+  position: relative;
+  width: 100%;
   height: 100%;
-  width: 50%;
-  background: rgb(44, 140, 224);
-  top: 21px;
-  opacity: 0;
 }
 
-.swiper-button-prev {
+.left__nav {
+  position: absolute;
   left: 0;
-  height: 100%;
   width: 50%;
-  background: aliceblue;
-  top: 21px;
-  opacity: 0;
-} */
-
+  height: 100%;
+}
+.right__nav {
+  position: absolute;
+  right: 0;
+  width: 50%;
+  height: 100%;
+}
