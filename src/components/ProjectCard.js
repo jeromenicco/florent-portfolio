@@ -41,9 +41,7 @@ function ProjectCard({ item }) {
                 key={index}
                 style={{
                   position: 'relative',
-                  paddingBottom: '56.25%' /* 16:9 */,
-                  // paddingTop: 25,
-                  // paddingTop: 45,
+                  paddingBottom: '56.25%',
                   paddingTop: '6.5%',
                   marginBottom: isDesktop && '10px',
                   height: 0
@@ -54,9 +52,7 @@ function ProjectCard({ item }) {
                   title={item}
                   src={`http://www.youtube.com/embed/${item}?mute=1&autoplay=1&loop=1&playlist=${item}`}
                   frameBorder='0'
-                  allow='autoplay; encrypted-media'
                   allowFullScreen
-                  // height={isDesktop ? 500 : 250}
                   controls
                   style={{
                     position: 'absolute',
