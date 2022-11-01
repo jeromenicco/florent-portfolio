@@ -23,6 +23,7 @@
   line-height: 18px;
   margin-top: -34px;
   order: 1;
+  width: 80%;
 }
 .card__text__container p {
   margin: 0;
@@ -82,4 +83,5 @@
   box-shadow: 0 0 5px #fff, 0 0 20px rgba(254, 254, 0, 0),
     0 0 10px rgba(254, 254, 0, 0);
 }
+
 

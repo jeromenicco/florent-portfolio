@@ -48,8 +48,9 @@ function ProjectCard({ item }) {
                 style={{
                   position: "relative",
                   paddingBottom: "56.25%" /* 16:9 */,
-                  paddingTop: 25,
-                  marginBottom: isDesktop && '5%',
+                  // paddingTop: 25,
+                  paddingTop: 45,
+                  marginBottom: isDesktop && '10px',
                   height: 0
                 }}
               >
@@ -61,7 +62,6 @@ function ProjectCard({ item }) {
                   frameBorder='0'
                   allow='autoplay; encrypted-media'
                   allowFullScreen
-                  width={'100%'}
                   // height={isDesktop ? 500 : 250}
                   controls
                   style={{
@@ -85,13 +85,11 @@ function ProjectCard({ item }) {
       <div
         className="card__text__container"
       >
-        <div className="title__arrow__container">
+        {/* <div className="title__arrow__container">
           <p className="card__title" onClick={isDesktop ? handleFullScreen : null}>{item.title}</p>
-        </div>
-        <div>
-          <p><span style={{ fontStyle: "italic" }}>{item.resumeItalic && item.resumeItalic}</span> {item.resume && item.resume}</p>
+        </div> */}
+          <p><span className="card__title" onClick={isDesktop ? handleFullScreen : null}>{item.title} </span><span style={{ fontStyle: "italic" }}>{item.resumeItalic && item.resumeItalic}</span> {item.resume && item.resume}</p>
           {item.link && <a target="_blank" rel="noreferrer" href={item.url}>{item.link}</a>}
-        </div>
       </div>
     </FadeIn>
   )
