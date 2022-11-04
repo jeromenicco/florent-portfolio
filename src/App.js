@@ -23,7 +23,7 @@ function App() {
           { !isVisible && <BottomBar history={history} /> }
           <ScrollToTop>
             <Switch>
-              <FadeIn>
+              <FadeIn delay={600}>
                 <Route exact path="/" component={Home} />
                 <Route exact path="/contact" component={Contact} />
               </FadeIn>

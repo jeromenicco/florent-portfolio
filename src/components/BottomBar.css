@@ -1,7 +1,8 @@
 @font-face {
   font-family: "Righteous-Regular";
   src: local("Righteous-Regular"),
-    url("../assets/fonts/Righteous-Regular.ttf") format("woff");
+    url("../assets/fonts/Righteous-Regular.ttf") format("truetype"),
+    url("../assets/fonts/Righteous-Regular.woff") format("woff");
 }
 .bottom__bar__container {
   font-family: "Righteous-Regular";
