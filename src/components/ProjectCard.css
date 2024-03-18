@@ -21,7 +21,7 @@
 .card__title__container {
   display: flex;
   align-items: baseline;
-  gap: 10px;
+  gap: 5px;
 }
 
 .card__title__container>* {

@@ -56,6 +56,10 @@
     margin-bottom: 40px;
   }
 
+  .card__title__container {
+    gap: 10px;
+  }
+
   .card__title {
     cursor: pointer;
   }
