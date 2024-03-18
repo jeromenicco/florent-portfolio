@@ -16,7 +16,6 @@ import "./responsive.css"
 function App() {
   const isVisible = useSelector(state => state.fullScreen.visible)
   const history = useHistory()
-  console.log('test')
   return (
     <div className="app">
       {!isVisible && <TopBar history={history} />}
