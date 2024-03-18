@@ -12,7 +12,6 @@ import './ProjectCard.css'
 function ProjectCard({ item }) {
   SwiperCore.use([EffectFade, Pagination, Navigation])
   const dispatch = useDispatch()
-
   const isDesktop = useMediaQuery({ query: '(min-width: 1280px)' })
 
   const handleFullScreen = () => {
@@ -20,84 +19,77 @@ function ProjectCard({ item }) {
     dispatch(setVisible(true))
   }
 
-  return (
-    <FadeIn className='card__container'>
-      <Swiper
-        className='swiper__container'
-        slidesPerView={1}
-        effect={'fade'}
-        spaceBetween={10}
-        loop={true}
-        pagination
-        navigation={item.img.length > 1 && isDesktop ? true : {
-          prevEl: '.left__nav',
-          nextEl: '.right__nav',
-        }}
-        allowTouchMove={isDesktop ? false : true}
-      >
-        {
-          item.img.map((item, index) => (
-            !item.includes('.jpg')
-              ?
-              <div
-                className='iframe__wrapper'
-                key={index}
-                style={{
-                  position: 'relative',
-                  paddingBottom: '56.25%',
-                  paddingTop: '6.5%',
-                  marginBottom: isDesktop && '10px',
-                  height: 0
-                }}
-              >
-                <iframe
-                  className='iframe'
-                  title={item}
-                  src={`http://www.youtube.com/embed/${item}?mute=1&autoplay=1&loop=1&playlist=${item}`}
-                  frameBorder='0'
-                  allowFullScreen
-                  controls
-                  style={{
-                    position: 'absolute',
-                    top: 0,
-                    left: 0,
-                    width: '100%',
-                    height: '100%',
-                  }}
-                />
-              </div>
-              :
-              <SwiperSlide key={index} onClick={isDesktop ? handleFullScreen : null}>
-                {
-                  !isDesktop
-                    ?
-                    <div className='slide__navigation__wrapper'>
-                      <div className='left__nav'></div>
-                      <div className='right__nav'></div>
-                      <img className='project__img' src={item} alt={item.title} />
-                    </div>
-                    :
-                    <img className='project__img' src={item} alt={item.title} />
-                }
-              </SwiperSlide>
-          ))
-        }
-      </Swiper>
+  const handleClickNext = (swiper) => {
+    swiper.slideNext()
+  }
 
-      <div className="card__info__container">
-        <div className="card__title__container">
+  return (
+    <FadeIn>
+      <div className='card__container'>
+
+        <Swiper
+          className='swiper__container'
+          slidesPerView={1}
+          effect={'fade'}
+          spaceBetween={10}
+          loop={true}
+          pagination
+          navigation={item.img.length > 1 ? true : false}
+          allowTouchMove={isDesktop ? false : true}
+          onClick={(swiper) => handleClickNext(swiper)}
+        >
           {
-            item.link
-              ?
-              <a target="_blank" rel="noreferrer" href={item.link}>
-                <h2 className="card__title" onClick={isDesktop ? handleFullScreen : null}>{item.title}</h2>
-              </a>
-              :
-              <h2 className="card__title" onClick={isDesktop ? handleFullScreen : null}>{item.title}</h2>
+            item.img.map((item, index) => (
+              !item.includes('.jpg')
+                ?
+                <div
+                  className='iframe__wrapper'
+                  key={index}
+                  style={{
+                    position: 'relative',
+                    paddingBottom: '56.25%',
+                    paddingTop: '6.5%',
+                    height: 0
+                  }}
+                >
+                  <iframe
+                    className='iframe'
+                    title={item}
+                    src={`http://www.youtube.com/embed/${item}?mute=1&autoplay=1&loop=1&controls=0&playlist=${item}`}
+                    frameBorder='0'
+                    allowFullScreen
+                    style={{
+                      position: 'absolute',
+                      top: 0,
+                      left: 0,
+                      width: '100%',
+                      height: '100%',
+                    }}
+                  />
+                </div>
+                :
+                <SwiperSlide key={index} onClick={isDesktop ? handleFullScreen : null}>
+                  <img className='project__img' src={item} alt={item.title} />
+                </SwiperSlide>
+            ))
           }
-          <p>{item.resume && item.resume}</p>
-        </div>
-        <div className='card__pagination__container'>
+        </Swiper>
+
+        <div className="card__info__container">
+          <div className="card__title__container">
+            {
+              item.link
+                ?
+                <a target="_blank" rel="noreferrer" href={item.link}>
+                  <h2 className="card__title" onClick={isDesktop ? handleFullScreen : null}>{item.title}</h2>
+                </a>
+                :
+                <h2 className="card__title" onClick={isDesktop ? handleFullScreen : null}>{item.title}</h2>
+            }
+            <p>{item.resume && item.resume}</p>
+          </div>
+          <div className='card__pagination__container'>
+          </div>
         </div>
       </div>
     </FadeIn>

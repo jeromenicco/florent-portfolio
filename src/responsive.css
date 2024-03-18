@@ -156,21 +156,21 @@
 }
 
 @media only screen and (min-width: 1800px) {
-  .swiper-button-prev {
+  /* .swiper-button-prev {
     top: 39%;
   }
 
   .swiper-button-next {
     top: 39%;
-  }
+  } */
 }
 
 @media only screen and (min-width: 2400px) {
-  .swiper-button-prev {
+  /* .swiper-button-prev {
     top: 40%;
   }
 
   .swiper-button-next {
     top: 40%;
-  }
+  } */
 }

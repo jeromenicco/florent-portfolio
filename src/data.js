@@ -75,7 +75,7 @@ import LMF2 from "./assets/images/LMF/LMF2.jpg"
 import LMF3 from "./assets/images/LMF/LMF3.jpg"
 import LMF4 from "./assets/images/LMF/LMF4.jpg"
 import LMF5 from "./assets/images/LMF/LMF5.jpg"
-import LMF6 from "./assets/images/LMF/LMF5.jpg"
+import LMF6 from "./assets/images/LMF/LMF6.jpg"
 
 import NETFLIX1 from "./assets/images/NETFLIX/NETFLIX1.jpg"
 import NETFLIX2 from "./assets/images/NETFLIX/NETFLIX2.jpg"

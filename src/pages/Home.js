@@ -16,18 +16,18 @@ function Home() {
       <div className="dum__space__home" />
       {
         !isVisible ?
-        projectList.map((item, index) => (
-          <ProjectCard
-            key={index}
-            item={item}
-          />
-        ))
-        :
+          projectList.map((item, index) => (
+            <ProjectCard
+              key={index}
+              item={item}
+            />
+          ))
+          :
           <ProjectFull fullProject={fullProject} />
       }
       {
         !isVisible &&
-        projectList.length %2 !== 0 && !isVisible && <div style={{ width: '48%' }} />
+        projectList.length % 2 !== 0 && !isVisible && <div style={{ width: '48%' }} />
       }
       <div className="dum__space__home" />
     </div>
