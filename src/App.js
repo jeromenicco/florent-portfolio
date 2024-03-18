@@ -16,20 +16,20 @@ import "./responsive.css"
 function App() {
   const isVisible = useSelector(state => state.fullScreen.visible)
   const history = useHistory()
-
+  console.log('test')
   return (
-        <div className="app">
-          { !isVisible && <TopBar history={history} /> }
-          { !isVisible && <BottomBar history={history} /> }
-          <ScrollToTop>
-            <Switch>
-              <FadeIn delay={600}>
-                <Route exact path="/" component={Home} />
-                <Route exact path="/contact" component={Contact} />
-              </FadeIn>
-            </Switch>
-          </ScrollToTop>
-        </div>
+    <div className="app">
+      {!isVisible && <TopBar history={history} />}
+      {!isVisible && <BottomBar history={history} />}
+      <ScrollToTop>
+        <Switch>
+          <FadeIn delay={600}>
+            <Route exact path="/" component={Home} />
+            <Route exact path="/contact" component={Contact} />
+          </FadeIn>
+        </Switch>
+      </ScrollToTop>
+    </div>
   )
 }
 
