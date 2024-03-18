@@ -1,12 +1,6 @@
-@font-face {
-  font-family: "Righteous-Regular";
-  src: local("Righteous-Regular"),
-    url("../assets/fonts/Righteous-Regular.ttf") format("truetype"),
-    url("../assets/fonts/Righteous-Regular.woff") format("woff");
-}
-
 .bottom__bar__container {
-  font-family: "Righteous-Regular";
+  font-family: "Righteous", sans-serif;
+  font-weight: 400;
   display: flex;
   align-items: center;
   height: 40px;
@@ -28,6 +22,5 @@
 
 .bottom__flex__wrap>* {
   margin: 0;
-  /* font-size: 23px; */
   cursor: pointer;
 }

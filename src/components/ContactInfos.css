@@ -1,7 +1,6 @@
 .infos__container {
-  /* font-size: 14px; */
-  /* line-height: 18px; */
-  font-family: "InknutAntiqua-Light";
+  font-family: "Inknut Antiqua", serif;
+  font-weight: 300;
   color: #fe7b7b;
   padding: 0 20px;
   margin: 0 auto;

@@ -1,17 +1,3 @@
-@font-face {
-  font-family: "InknutAntiqua-Light";
-  src: local("InknutAntiqua-Light"),
-    url("../assets/fonts/InknutAntiqua-Light.ttf") format("truetype"),
-    url("../assets/fonts/InknutAntiqua-Light.woff") format("woff");
-}
-
-@font-face {
-  font-family: "InknutAntiqua-Bold";
-  src: local("InknutAntiqua-Bold"),
-    url("../assets/fonts/InknutAntiqua-Bold.ttf") format("truetype"),
-    url("../assets/fonts/InknutAntiqua-Bold.woff") format("woff");
-}
-
 .card__container {
   touch-action: manipulation;
   position: relative;

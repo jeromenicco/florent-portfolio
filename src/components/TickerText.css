@@ -4,7 +4,8 @@
 }
 
 .ticker__text {
-  font-family: "Righteous";
+  font-family: "Righteous", sans-serif;
+  font-weight: 400;
   width: max-content;
   font-weight: 400;
   color: #fe7b7b;

@@ -4,7 +4,6 @@ import Ticker from "react-ticker"
 import { Spring, animated } from "react-spring"
 
 import "./TickerText.css"
-const WebFont = require("webfontloader")
 
 function TickerText() {
   const [pageIsVisible, setPageIsVisible] = useState(true)
@@ -15,12 +14,6 @@ function TickerText() {
       setIsVisible(true)
     }, 1000)
   },)
-
-  WebFont.load({
-    google: {
-      families: ["Righteous"]
-    }
-  })
 
   const handleVisibilityChange = (isVisible) => {
     setPageIsVisible(isVisible)
