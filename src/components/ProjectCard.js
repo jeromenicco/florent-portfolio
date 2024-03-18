@@ -47,9 +47,8 @@ function ProjectCard({ item }) {
                   key={index}
                   style={{
                     position: 'relative',
-                    paddingBottom: '56.25%',
+                    paddingBottom: '56.6%',
                     paddingTop: '6.5%',
-                    height: 0
                   }}
                 >
                   <iframe
