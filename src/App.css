@@ -1,13 +1,81 @@
 @keyframes fadeIn {
-    from { opacity: 0;
-    }
-    to {
-      opacity: 1;
-    }
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+:root {
+  --large-fs: 24px;
+  --medium-fs: 18px;
+  --small-fs: 11px;
+  --xsmall-fs: 9px
 }
 
 body {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
   background: black;
+  -webkit-font-smoothing: antialiased;
+  -ms-autohiding-scrollbar: auto;
+  -ms-overflow-style: none;
+  overflow: -moz-scrollbars-none;
+  scrollbar-width: none;
+  -webkit-overflow-scrolling: touch;
+  user-select: none;
+  -ms-user-select: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  scroll-behavior: smooth;
 }
 
+::-webkit-scrollbar {
+  width: 0px;
+  height: 0px;
+  background: transparent;
+}
 
+a {
+  color: inherit;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-top: 0;
+}
+
+ul,
+li {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+p {
+  font-family: "InknutAntiqua-Light";
+  font-size: var(--small-fs);
+  line-height: calc(var(--small-fs) * 1.33);
+}
+
+h2 {
+  font-family: "InknutAntiqua-Bold";
+  font-size: var(--small-fs);
+  line-height: calc(var(--small-fs) * 1.33);
+}
+
+.top__bar__container,
+.bottom__bar__container {
+  font-size: var(--medium-fs);
+}

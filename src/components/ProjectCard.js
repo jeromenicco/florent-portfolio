@@ -83,25 +83,26 @@ function ProjectCard({ item }) {
           ))
         }
       </Swiper>
-      {/* <div className='card__text__container'>
-        <p className='card__title' onClick={isDesktop ? handleFullScreen : null}>{item.title}</p>
-        <p>{item.resume && item.resume}</p>
-        {item.link && <a target='_blank' rel='noreferrer' href={item.url}>{item.link}</a>}
-      </div> */}
-      <div className="card__text__container">
-          <div className="title__arrow__container">
-            <p className="card__title" onClick={isDesktop ? handleFullScreen : null}>{item.title}</p>
-          </div>
-          <div>
-            <p>{ item.resume && item.resume}</p>
-            {
-              item.link && 
-              <a target="_blank" rel="noreferrer" href={item.url}>{item.link}</a>
-            }
-          </div>
+
+      <div className="card__info__container">
+        <div className="card__title__container">
+          {
+            item.link
+              ?
+              <a target="_blank" rel="noreferrer" href={item.link}>
+                <h2 className="card__title" onClick={isDesktop ? handleFullScreen : null}>{item.title}</h2>
+              </a>
+              :
+              <h2 className="card__title" onClick={isDesktop ? handleFullScreen : null}>{item.title}</h2>
+          }
+          <p>{item.resume && item.resume}</p>
         </div>
+        <div className='card__pagination__container'>
+        </div>
+      </div>
     </FadeIn>
   )
 }
+
 
 export default ProjectCard

@@ -15,45 +15,45 @@ function TickerText() {
       setIsVisible(true)
     }, 1000)
   },)
-  
+
   WebFont.load({
-      google: {
-        families: ["Righteous"]
-      }
+    google: {
+      families: ["Righteous"]
+    }
   })
-  
+
   const handleVisibilityChange = (isVisible) => {
     setPageIsVisible(isVisible)
   }
 
   return (
     <PageVisibility onChange={handleVisibilityChange}>
-        {
-          isVisible &&
-          <div className="ticker__container">
-            { pageIsVisible && (
-              <Ticker>
-                {({index}) => (
+      {
+        isVisible &&
+        <div className="ticker__container">
+          {pageIsVisible && (
+            <Ticker>
+              {({ index }) => (
                 <>
                   <Spring
-                    from={{opacity: 0}}
-                    to={{ opacity: 1}}
-                    config={{duration: 500}}
+                    from={{ opacity: 0 }}
+                    to={{ opacity: 1 }}
+                    config={{ duration: 500 }}
                   >
-                  { styles => (
+                    {styles => (
                       <animated.div style={styles}>
-                        <p className="ticker__text">
+                        <h4 className="ticker__text">
                           &nbsp;Hi! I am Florent, art director, motion designer and visual artist. Salut ! Je suis Florent, directeur artistique, motion designer et artiste visuel.
-                        </p>
+                        </h4>
                       </animated.div>
                     )}
                   </Spring>
                 </>
               )}
-              </Ticker>
-            )}
-          </div>
-        }
+            </Ticker>
+          )}
+        </div>
+      }
     </PageVisibility>
   )
 }

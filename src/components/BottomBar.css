@@ -4,6 +4,7 @@
     url("../assets/fonts/Righteous-Regular.ttf") format("truetype"),
     url("../assets/fonts/Righteous-Regular.woff") format("woff");
 }
+
 .bottom__bar__container {
   font-family: "Righteous-Regular";
   display: flex;
@@ -16,6 +17,7 @@
   width: 100%;
   z-index: 2;
 }
+
 .bottom__flex__wrap {
   display: flex;
   justify-content: space-between;
@@ -23,7 +25,9 @@
   margin-right: 10px;
   margin-left: 10px;
 }
-.bottom__bar__container p {
+
+.bottom__flex__wrap>* {
+  margin: 0;
+  /* font-size: 23px; */
   cursor: pointer;
-  font-size: 23px;
 }

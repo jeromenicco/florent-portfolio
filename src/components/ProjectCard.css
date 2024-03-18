@@ -4,43 +4,43 @@
     url("../assets/fonts/InknutAntiqua-Light.ttf") format("truetype"),
     url("../assets/fonts/InknutAntiqua-Light.woff") format("woff");
 }
+
 @font-face {
   font-family: "InknutAntiqua-Bold";
   src: local("InknutAntiqua-Bold"),
     url("../assets/fonts/InknutAntiqua-Bold.ttf") format("truetype"),
     url("../assets/fonts/InknutAntiqua-Bold.woff") format("woff");
 }
+
 .card__container {
   position: relative;
   margin-right: 5%;
   margin-left: 5%;
-  margin-bottom: 20px;
+  margin-bottom: 40px;
   z-index: 0;
 }
-.card__text__container {
-  font-family: "InknutAntiqua-Light";
-  text-align: left;
+
+.card__info__container {
   width: 100%;
   color: #fe7b7b;
-  line-height: 18px;
-  margin-top: -34px;
   order: 1;
-  width: 80%;
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 10px;
+  margin-top: 20px;
 }
-.card__text__container p {
+
+.card__title__container {
+  display: flex;
+  align-items: baseline;
+  gap: 10px;
+}
+
+.card__title__container>* {
   margin: 0;
-  width: 100%;
-  font-size: 13px;
 }
-.card__text__container a {
-  color: #fe7b7b;
-  margin-top: 10px;
-  font-size: 13px;
-}
-.card__title {
-  font-family: "InknutAntiqua-Bold";
-  font-size: 18px;
-}
+
 /* SWIPER -------- */
 .swiper-container {
   width: 100%;
@@ -53,33 +53,41 @@
   width: 100%;
   height: auto;
 }
+
 .swiper-slide {
   display: flex;
   width: 100%;
   justify-content: center;
   align-items: center;
 }
-.swiper-container-horizontal > .swiper-pagination-bullets {
-  position: initial;
-  width: auto;
-  margin-top: 20px;
-  margin-bottom: 20px;
-  order: 1;
-  width: fit-content;
+
+.custom__pagination {
   display: flex;
-  align-self: flex-end;
-  z-index: -1;
+  gap: 7px;
 }
-.swiper-container-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet {
-  margin: 0 3px;
-}
+
 .swiper-pagination-bullet {
-  border-radius: 0;
   background-color: #fe7b7b;
-  opacity: 1;
   width: 7px;
   height: 7px;
+  border-radius: 0;
 }
+
+.swiper-container-horizontal>.swiper-pagination-bullets {
+  bottom: 0;
+  right: 0;
+  width: auto;
+  text-align: end;
+}
+
+.swiper-container-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet {
+  margin: 0 2px;
+}
+
+.swiper-container-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet:last-child {
+  margin-right: 0;
+}
+
 .swiper-pagination-bullet-active {
   background-color: #fefe00;
   box-shadow: 0 0 5px #fff, 0 0 20px rgba(254, 254, 0, 0),
@@ -98,6 +106,7 @@
   width: 50%;
   height: 100%;
 }
+
 .right__nav {
   position: absolute;
   right: 0;

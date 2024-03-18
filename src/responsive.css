@@ -1,33 +1,46 @@
 @media only screen and (min-width: 280px) {
   .bottom__bar__container p {
-    font-size: 18px;
+    /* font-size: 18px; */
   }
 }
 
 @media only screen and (min-width: 320px) {
   .bottom__bar__container p {
-    font-size: 20px;
-  }
-  .card__text__container {
-    margin-top: -33px;
+    /* font-size: 20px; */
   }
 }
+
 @media only screen and (min-width: 375px) {
   .bottom__bar__container p {
-    font-size: 23px;
+    /* font-size: 23px; */
+  }
+}
+
+@media only screen and (min-width: 780px) {
+  .infos__container {
+    max-width: 700px;
   }
 }
 
 @media only screen and (min-width: 1280px) {
 
+  :root {
+    --large-fs: 36px;
+    --medium-fs: 24px;
+    --small-fs: 16px;
+    --xsmall-fs: 14px
+  }
+
   .home__container {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-evenly;
+    align-items: flex-start;
     width: 100%;
-    padding-top: 60px;
+    padding-top: 70px;
     padding-bottom: 70px;
   }
+
   .home__container__full {
     flex-direction: row;
     flex-wrap: wrap;
@@ -35,27 +48,18 @@
     width: 100%;
     position: fixed;
   }
+
   .card__container {
     width: calc(50vw - 40px);
     height: auto;
     margin: 0;
-    padding-bottom: 2%;
+    margin-bottom: 40px;
   }
+
   .card__title {
     cursor: pointer;
   }
-  .card__text__container {
-    line-height: 22px;
-    margin-top: -37px;
-  }
-  .card__text__container p {
-    margin: 0;
-    width: 100%;
-    font-size: 16px;
-  }
-  .card__text__container a {
-    font-size: 16px;
-  }
+
   .swiper-container {
     width: 100%;
     position: initial;
@@ -63,79 +67,86 @@
     flex-direction: column;
     cursor: pointer;
   }
+
   .swiper-container:hover .swiper-button-next {
     opacity: 1;
   }
+
   .swiper-container:hover .swiper-button-prev {
     opacity: 1;
   }
+
   .swiper-button-prev {
     display: initial;
     opacity: 0;
     color: #fefe00;
     text-shadow: 0 0 10px #fff, 0 0 10px rgba(254, 254, 0, 0.7);
-    top: 37%;
+    height: 50px;
+    top: calc(50% - 25px);
+    padding: 0 10px;
     left: 0;
-    padding: 10px;
     transition: all ease-in-out 1s;
   }
+
   .swiper-button-next {
     display: initial;
     opacity: 0;
     color: #fefe00;
     text-shadow: 0 0 10px #fff, 0 0 10px rgba(254, 254, 0, 0.7);
-    top: 37%;
+    height: 50px;
+    top: calc(50% - 25px);
+    padding: 0 10px;
     right: 0;
-    padding: 10px;
     transition: all ease-in-out 1s;
   }
+
   .swiper-pagination-bullet {
-    border-radius: 0;
-    background-color: #fe7b7b;
-    width: 8px;
-    height: 8px;
-    opacity: 1;
+    width: 10px;
+    height: 10px;
   }
-  .swiper-pagination-bullet-active {
-    background-color: #fefe00;
-    box-shadow: 0 0 5px #fff, 0 0 20px rgba(254, 254, 0, 0),
-      0 0 10px rgba(254, 254, 0, 0);
+
+  .swiper-container-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet {
+    margin: 0 4px;
   }
+
   .bottom__flex__wrap {
     margin-right: 20px;
     margin-left: 20px;
   }
+
   .dum__space__home {
     display: none;
   }
 
-  .contact__container {
-    margin-top: 15%;
-    margin-left: 25%;
-    margin-right: 25%;
-  }
   .infos__container {
-    line-height: 22px;
-    font-size: 17px;
+    max-width: 1100px;
+    padding: 0;
+    margin: 0 auto;
   }
+
   .full__wrapper {
     height: 100vh;
   }
+
   .full__container {
     display: flex;
     overflow-x: scroll;
     height: 100vh;
   }
+
   .full__container::-webkit-scrollbar {
     display: none;
   }
+
   .horizontal__container {
     width: 100%;
     position: relative;
   }
+
   .full__project__img {
     height: 100vh;
   }
+
   .back__arrow__container {
     position: absolute;
     left: 30px;
@@ -146,27 +157,20 @@
 
 @media only screen and (min-width: 1800px) {
   .swiper-button-prev {
-   
     top: 39%;
-   
   }
+
   .swiper-button-next {
-   
     top: 39%;
-  
   }
 }
 
 @media only screen and (min-width: 2400px) {
   .swiper-button-prev {
-   
     top: 40%;
-   
   }
+
   .swiper-button-next {
-   
     top: 40%;
-  
   }
 }
-

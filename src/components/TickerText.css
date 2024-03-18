@@ -2,11 +2,12 @@
   width: 100%;
   z-index: -1;
 }
+
 .ticker__text {
   font-family: "Righteous";
-  color: #3f002e;
-  font-size: 30px;
   width: max-content;
+  font-weight: 400;
+  color: #fe7b7b;
+  /* font-size: 23px; */
+  margin: 0;
 }
-
-
