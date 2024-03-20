@@ -24,7 +24,8 @@
   gap: 5px;
 }
 
-.card__title__container>* {
+.card__title__container>*,
+.card__title__container>*>* {
   margin: 0;
 }
 

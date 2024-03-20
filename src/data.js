@@ -85,6 +85,8 @@ import NETFLIX5 from "./assets/images/NETFLIX/NETFLIX5.jpg"
 
 import WA1 from "./assets/images/WA/WA1.jpg"
 import WA2 from "./assets/images/WA/WA2.jpg"
+import WA3 from "./assets/images/WA/WA3.jpg"
+import WA4 from "./assets/images/WA/WA4.jpg"
 
 
 // const KONBINI_YOUTUBE_ID = "oeAAKnn0GPw"
@@ -114,7 +116,7 @@ export const projectList = [
     title: "Wise Ancestors",
     resume: "brand identity",
     link: "https://www.wiseancestors.org/",
-    img: [WA1, WA2],
+    img: [WA1, WA2, WA3, WA4],
   },
   {
     title: "La Maison forte, cahier n°1",
