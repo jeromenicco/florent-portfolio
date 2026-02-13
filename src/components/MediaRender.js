@@ -14,7 +14,7 @@ const MediaRender = ({ media }) => {
                   :
                   <iframe
                     title={item}
-                    src={`http://www.youtube.com/embed/${item}?mute=1&autoplay=1&loop=1&playlist=${item}`}
+                    src={`https://www.youtube.com/embed/${item}?mute=1&autoplay=1&loop=1&playlist=${item}`}
                     frameBorder='0'
                     allowFullScreen
                     controls
